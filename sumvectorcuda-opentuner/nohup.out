@@ -1,0 +1,1545 @@
+sumvector-opentuner.py:91: SyntaxWarning: name 'compiled' is used prior to global declaration
+  global compiled
+[    16s]    INFO opentuner.search.plugin.DisplayPlugin: tests=4, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:8, by:4, bz:3, ' \n", 'n': 65568}, cost time=-120127221.0000, found by DifferentialEvolutionAlt
+[    32s]    INFO opentuner.search.plugin.DisplayPlugin: tests=8, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:16, bz:3, ' \n", 'n': 65568}, cost time=-121858924.0000, found by UniformGreedyMutation
+Executing manipulator
+Executing manipulator
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:1, by:8, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '1', 'by': '8', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  false
+Compiling the program...
+ OK.
+
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 1 8 4 65568 0
+substrg:  ['Instructions Executed', '106036307', '106036307', '106036307']
+inst_executed:  106036307.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:2, by:16, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '16', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 2 16 3 65568 0
+substrg:  ['Instructions Executed', '116491229', '116491229', '116491229']
+inst_executed:  116491229.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:8, by:4, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '8', 'by': '4', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 8 4 3 65568 0
+substrg:  ['Instructions Executed', '120127222', '120127222', '120127222']
+inst_executed:  120127222.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:2049, bx:16, by:2, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '2049', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 2049 16 2 1 65568 0
+substrg:  ['Instructions Executed', '103034385', '103034385', '103034385']
+inst_executed:  103034385.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:16, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '16', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 16 3 65568 0
+substrg:  ['Instructions Executed', '121858925', '121858925', '121858925']
+inst_executed:  121858925.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:1, bz:32, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '3', 'by': '1', 'bz': '32'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 3 1 32 65568 0
+substrg:  ['Instructions Executed', '120301514', '120301514', '120301514']
+inst_executed:  120301514.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:2, by:8, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '2', 'by': '8', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 2 8 2 65568 0
+substrg:  ['Instructions Executed', ' 95696396', ' 95696396', ' 95696396']
+inst_executed:  95696396.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:4, by:6, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '4', 'by': '6', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 4 6 4 65568 0
+substrg:  ['Instructions Executed', '114981099', '114981099', '114981099']
+inst_executed:  114981099.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:6, by:1, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '6', 'by': '1', 'bz': '16'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 6 1 16 65568 0
+substrg:  ['Instructions Executed', '122474504', '122474504', '122474504']
+inst_executed:  122474504.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config[    48s]    INFO opentuner.search.plugin.DisplayPlugin: tests=12, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:4, by:3, bz:8, ' \n", 'n': 65568}, cost time=-125188851.0000, found by DifferentialEvolutionAlt
+[    48s] WARNING opentuner.search.driver: duplicate configuration request #14 DifferentialEvolutionAlt/RandomNelderMead OLD
+[    60s]    INFO opentuner.search.plugin.DisplayPlugin: tests=15, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+': "'gx:1, gy:683, gz:1, bx:4, by:3, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '4', 'by': '3', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 4 3 8 65568 0
+substrg:  ['Instructions Executed', '125188852', '125188852', '125188852']
+inst_executed:  125188852.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:4, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '3', 'by': '4', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 3 4 8 65568 0
+substrg:  ['Instructions Executed', '125082427', '125082427', '125082427']
+inst_executed:  125082427.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:3, gz:1, bx:2, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '3', 'gz': '1', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 3 1 2 2 8 65568 0
+substrg:  ['Instructions Executed', '108605028', '108605028', '108605028']
+inst_executed:  108605028.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:4, by:2, bz:12, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '4', 'by': '2', 'bz': '12'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 4 2 12 65568 0
+substrg:  ['Instructions Executed', '116199825', '116199825', '116199825']
+inst_executed:  116199825.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '3', 'by': '32', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 3 32 1 65568 0
+substrg:  ['Instructions Executed', '125492263', '125492263', '125492263']
+inst_executed:  125492263.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:2, by:1, bz:48, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '1', 'bz': '48'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 2 1 48 65568 0
+substrg:  ['Instructions Executed', '124260153', '124260153', '124260153']
+inst_executed:  124260153.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:2, by:8, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '8', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 2 8 2 65568 0
+substrg:  ['Instructions Executed', ' 93178232', ' 93178232', ' 93178232']
+inst_executed:  93178232.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:3, gz:1, bx:4, by:4, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '3', 'gz': '1', 'bx': '4', 'by': '4', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 3 1 4 4 2 65568 0
+substrg:  ['Instructions Executed', '101295115', '101295115', '101295115']
+inst_executed:  101295115.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:2, by:8, bz:6, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '8', 'bz': '6'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 2 8 6 65568 0
+substrg:  ['Instructions Executed', '114929399', '114929399', '114929399']
+inst_executed:  114929399.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:2, by:6, bz:8, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '6', 'bz': '[    75s]    INFO opentuner.search.plugin.DisplayPlugin: tests=19, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+[    89s]    INFO opentuner.search.plugin.DisplayPlugin: tests=23, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+[   104s]    INFO opentuner.search.plugin.DisplayPlugin: tests=27, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 2 6 8 65568 0
+substrg:  ['Instructions Executed', '111780082', '111780082', '111780082']
+inst_executed:  111780082.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:1, by:2, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '1', 'by': '2', 'bz': '16'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 1 2 16 65568 0
+substrg:  ['Instructions Executed', '103721222', '103721222', '103721222']
+inst_executed:  103721222.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:4, by:1, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '1', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 4 1 8 65568 0
+substrg:  ['Instructions Executed', ' 94018145', ' 94018145', ' 94018145']
+inst_executed:  94018145.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:2, by:16, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 2 16 1 65568 0
+substrg:  ['Instructions Executed', ' 94143864', ' 94143864', ' 94143864']
+inst_executed:  94143864.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:12, by:4, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '12', 'by': '4', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 12 4 2 65568 0
+substrg:  ['Instructions Executed', '119791432', '119791432', '119791432']
+inst_executed:  119791432.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:1, by:32, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '32', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 1 32 1 65568 0
+substrg:  ['Instructions Executed', '114669037', '114669037', '114669037']
+inst_executed:  114669037.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:1, by:2, bz:48, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '2', 'bz': '48'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 1 2 48 65568 0
+substrg:  ['Instructions Executed', '117083926', '117083926', '117083926']
+inst_executed:  117083926.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:2, bz:24, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '2', 'bz': '24'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 2 24 65568 0
+substrg:  ['Instructions Executed', '122755062', '122755062', '122755062']
+inst_executed:  122755062.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:4, by:24, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '4', 'by': '24', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 4 24 1 65568 0
+substrg:  ['Instructions Executed', '112985304', '112985304', '112985304']
+inst_executed:  112985304.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:2049, gz:1, bx:2, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049', 'gz': '1', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./su[   120s]    INFO opentuner.search.plugin.DisplayPlugin: tests=31, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+[   120s] WARNING opentuner.search.driver: duplicate configuration request #35 UniformGreedyMutation/DifferentialEvolutionAlt OLD
+[   131s]    INFO opentuner.search.plugin.DisplayPlugin: tests=34, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+[   131s] WARNING opentuner.search.driver: duplicate configuration request #39 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+mvector-cuda 0 1 2049 1 2 2 8 65568 0
+substrg:  ['Instructions Executed', '103262523', '103262523', '103262523']
+inst_executed:  103262523.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:12, by:1, bz:8, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '12', 'by': '1', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 12 1 8 65568 0
+substrg:  ['Instructions Executed', '113030948', '113030948', '113030948']
+inst_executed:  113030948.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:4, by:24, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '24', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 4 24 1 65568 0
+substrg:  ['Instructions Executed', '112384386', '112384386', '112384386']
+inst_executed:  112384386.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:4, by:8, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '4', 'by': '8', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 4 8 3 65568 0
+substrg:  ['Instructions Executed', '117455846', '117455846', '117455846']
+inst_executed:  117455846.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:1, by:16, bz:6, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '16', 'bz': '6'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 1 16 6 65568 0
+substrg:  ['Instructions Executed', '113308013', '113308013', '113308013']
+inst_executed:  113308013.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:1, by:1, bz:32, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '1', 'by': '1', 'bz': '32'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 1 1 32 65568 0
+substrg:  ['Instructions Executed', ' 98369541', ' 98369541', ' 98369541']
+inst_executed:  98369541.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:2049, bx:4, by:4, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '2049', 'bx': '4', 'by': '4', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 2049 4 4 2 65568 0
+substrg:  ['Instructions Executed', '112641085', '112641085', '112641085']
+inst_executed:  112641085.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:2, by:24, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '24', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 2 24 2 65568 0
+substrg:  ['Instructions Executed', '121851448', '121851448', '121851448']
+inst_executed:  121851448.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:4, by:24, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '4', 'by': '24', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 4 24 1 65568 0
+substrg:  ['Instructions Executed', '117351658', '117351658', '117351658']
+inst_executed:  117351658.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:2049, bx:16, by:1, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '2049', 'bx': '16', 'by': '1', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 2049 16 1 2 65568 0
+substrg:  ['Instructions Executed', ' 85623027', ' 85623027', ' 85623027']
+ins[   142s]    INFO opentuner.search.plugin.DisplayPlugin: tests=37, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+[   157s]    INFO opentuner.search.plugin.DisplayPlugin: tests=41, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+[   157s] WARNING opentuner.search.driver: duplicate configuration request #46 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   167s]    INFO opentuner.search.plugin.DisplayPlugin: tests=44, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:32, bz:1, ' \n", 'n': 65568}, cost time=-125492262.0000, found by DifferentialEvolutionAlt
+t_executed:  85623027.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:16, by:2, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 16 2 1 65568 0
+substrg:  ['Instructions Executed', ' 97544184', ' 97544184', ' 97544184']
+inst_executed:  97544184.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:1, bz:48, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '1', 'bz': '48'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 1 48 65568 0
+substrg:  ['Instructions Executed', '118018047', '118018047', '118018047']
+inst_executed:  118018047.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:2, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 2 2 8 65568 0
+substrg:  ['Instructions Executed', '116563334', '116563334', '116563334']
+inst_executed:  116563334.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:2049, gz:1, bx:4, by:4, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049', 'gz': '1', 'bx': '4', 'by': '4', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 2049 1 4 4 2 65568 0
+substrg:  ['Instructions Executed', '104800163', '104800163', '104800163']
+inst_executed:  104800163.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:1, by:32, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '1', 'by': '32', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 1 32 1 65568 0
+substrg:  ['Instructions Executed', ' 91422571', ' 91422571', ' 91422571']
+inst_executed:  91422571.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:2, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 2 2 8 65568 0
+substrg:  ['Instructions Executed', '100515898', '100515898', '100515898']
+inst_executed:  100515898.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:48, by:2, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '48', 'by': '2', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 48 2 1 65568 0
+substrg:  ['Instructions Executed', '120501338', '120501338', '120501338']
+inst_executed:  120501338.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:2, by:2, bz:24, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '2', 'bz': '24'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 2 2 24 65568 0
+substrg:  ['Instructions Executed', '114693550', '114693550', '114693550']
+inst_executed:  114693550.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:2049, bx:4, by:2, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '2049', 'bx': '4', 'by': '2', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 2049 4 2 4 65568 0
+substrg:  ['Instructions Executed', ' 95415168', ' 95415168', ' 95415168']
+inst_executed:  95415168.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId[   182s]    INFO opentuner.search.plugin.DisplayPlugin: tests=48, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   182s] WARNING opentuner.search.driver: duplicate configuration request #54 NormalGreedyMutation/RandomNelderMead OLD
+[   193s]    INFO opentuner.search.plugin.DisplayPlugin: tests=51, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   209s]    INFO opentuner.search.plugin.DisplayPlugin: tests=55, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '32', 'by': '3', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 32 3 1 65568 0
+substrg:  ['Instructions Executed', '128798047', '128798047', '128798047']
+inst_executed:  128798047.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:4, by:8, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 4 8 1 65568 0
+substrg:  ['Instructions Executed', ' 97124013', ' 97124013', ' 97124013']
+inst_executed:  97124013.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:2049, gz:1, bx:4, by:1, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049', 'gz': '1', 'bx': '4', 'by': '1', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 2049 1 4 1 8 65568 0
+substrg:  ['Instructions Executed', '104434640', '104434640', '104434640']
+inst_executed:  104434640.0
+Configuration:  {'kernel': 0, 'config': "'gx:3, gy:683, gz:1, bx:1, by:8, bz:4, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '1', 'by': '8', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 1 8 4 65568 0
+substrg:  ['Instructions Executed', ' 92388174', ' 92388174', ' 92388174']
+inst_executed:  92388174.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:8, by:12, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '8', 'by': '12', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 8 12 1 65568 0
+substrg:  ['Instructions Executed', '125617875', '125617875', '125617875']
+inst_executed:  125617875.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:8, by:1, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '8', 'by': '1', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 8 1 4 65568 0
+substrg:  ['Instructions Executed', '105738889', '105738889', '105738889']
+inst_executed:  105738889.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:6, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '6', 'by': '2', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 6 2 8 65568 0
+substrg:  ['Instructions Executed', '117387408', '117387408', '117387408']
+inst_executed:  117387408.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:6, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '6', 'by': '2', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 6 2 8 65568 0
+substrg:  ['Instructions Executed', '118243583', '118243583', '118243583']
+inst_executed:  118243583.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:3, by:16, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '3', 'by': '16', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 3 16 2 65568 0
+substrg:  ['Instructions Executed', '117635152', '117635152', '117635152']
+inst_executed:  117635152.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:2, by:1, bz:48, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '1', 'bz': '48'}
+ConfBlock 96
+ConfGrid 683
+compiled: [   224s]    INFO opentuner.search.plugin.DisplayPlugin: tests=59, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   239s]    INFO opentuner.search.plugin.DisplayPlugin: tests=63, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+/usr/local/lib/python2.7/dist-packages/sqlalchemy/orm/relationships.py:1423: SAWarning: Got None for value of column configuration.id; this is unsupported for a relationship comparison and will not currently produce an IS comparison (but may in a future release)
+  "(but may in a future release)" % column)
+ true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 2 1 48 65568 0
+substrg:  ['Instructions Executed', '109705537', '109705537', '109705537']
+inst_executed:  109705537.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:1, by:4, bz:24, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '4', 'bz': '24'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 1 4 24 65568 0
+substrg:  ['Instructions Executed', '110865168', '110865168', '110865168']
+inst_executed:  110865168.0
+Configuration:  {'kernel': 0, 'config': "'gx:683, gy:1, gz:1, bx:4, by:3, bz:8, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '3', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 4 3 8 65568 0
+substrg:  ['Instructions Executed', '113218114', '113218114', '113218114']
+inst_executed:  113218114.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:1, by:32, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '32', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 1 32 3 65568 0
+substrg:  ['Instructions Executed', '117799022', '117799022', '117799022']
+inst_executed:  117799022.0
+Configuration:  {'kernel': 0, 'config': "'gx:2049, gy:1, gz:1, bx:8, by:2, bz:2, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '8', 'by': '2', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 8 2 2 65568 0
+substrg:  ['Instructions Executed', ' 93836213', ' 93836213', ' 93836213']
+inst_executed:  93836213.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:6, by:4, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '6', 'by': '4', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 6 4 4 65568 0
+substrg:  ['Instructions Executed', '118985220', '118985220', '118985220']
+inst_executed:  118985220.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:16, by:3, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '16', 'by': '3', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 16 3 2 65568 0
+substrg:  ['Instructions Executed', '124743532', '124743532', '124743532']
+inst_executed:  124743532.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:1, by:4, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 1 4 8 65568 0
+substrg:  ['Instructions Executed', ' 94037073', ' 94037073', ' 94037073']
+inst_executed:  94037073.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:3, gz:1, bx:1, by:16, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '3', 'gz': '1', 'bx': '1', 'by': '16', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 3 1 1 16 2 65568 0
+substrg:  ['Instructions Executed', ' 93013192', ' 93013192', ' 93013192']
+inst_executed:  93013192.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:16, by:2, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 16 2 1 65568 0
+substrg:  ['[   254s]    INFO opentuner.search.plugin.DisplayPlugin: tests=67, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   254s] WARNING opentuner.search.driver: duplicate configuration request #75 NormalGreedyMutation/DifferentialEvolutionAlt OLD
+[   265s]    INFO opentuner.search.plugin.DisplayPlugin: tests=70, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   279s]    INFO opentuner.search.plugin.DisplayPlugin: tests=74, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   279s] WARNING opentuner.search.driver: duplicate configuration request #81 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   279s] WARNING opentuner.search.driver: duplicate configuration request #82 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+Instructions Executed', '103667518', '103667518', '103667518']
+inst_executed:  103667518.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:16, by:1, bz:6, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '16', 'by': '1', 'bz': '6'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 16 1 6 65568 0
+substrg:  ['Instructions Executed', '120098834', '120098834', '120098834']
+inst_executed:  120098834.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:1, by:96, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '96', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 1 96 1 65568 0
+substrg:  ['Instructions Executed', '113597695', '113597695', '113597695']
+inst_executed:  113597695.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:12, by:8, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '12', 'by': '8', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 12 8 1 65568 0
+substrg:  ['Instructions Executed', '113455454', '113455454', '113455454']
+inst_executed:  113455454.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:32, by:1, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '32', 'by': '1', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 32 1 1 65568 0
+substrg:  ['Instructions Executed', ' 91183546', ' 91183546', ' 91183546']
+inst_executed:  91183546.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:24, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '1', 'by': '24', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 1 24 4 65568 0
+substrg:  ['Instructions Executed', '115900337', '115900337', '115900337']
+inst_executed:  115900337.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:4, by:3, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '4', 'by': '3', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 4 3 8 65568 0
+substrg:  ['Instructions Executed', '119198048', '119198048', '119198048']
+inst_executed:  119198048.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:3, gz:683, bx:1, by:4, bz:8, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '3', 'gz': '683', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 3 683 1 4 8 65568 0
+substrg:  ['Instructions Executed', ' 93797164', ' 93797164', ' 93797164']
+inst_executed:  93797164.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:2049, gz:1, bx:1, by:8, bz:4, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049', 'gz': '1', 'bx': '1', 'by': '8', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 2049 1 1 8 4 65568 0
+substrg:  ['Instructions Executed', '104169887', '104169887', '104169887']
+inst_executed:  104169887.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:3, gz:1, bx:4, by:8, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '3', 'gz': '1', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 3 1 4 8 1 65568 0
+substrg:  ['Instructions Executed', ' 95996402', ' 95996402', ' 95996402']
+inst_executed:  95996402.0
+Configuration:  {'kernel': 0, 'gpuI[   287s] WARNING opentuner.search.driver: duplicate configuration request #86 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   298s]    INFO opentuner.search.plugin.DisplayPlugin: tests=79, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   298s] WARNING opentuner.search.driver: duplicate configuration request #88 DifferentialEvolutionAlt/NormalGreedyMutation OLD
+[   309s]    INFO opentuner.search.plugin.DisplayPlugin: tests=82, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   309s] WARNING opentuner.search.driver: duplicate configuration request #94 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+d': 0, 'config': "'gx:3, gy:1, gz:683, bx:1, by:1, bz:32, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '1', 'bz': '32'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 1 1 32 65568 0
+substrg:  ['Instructions Executed', '107184604', '107184604', '107184604']
+inst_executed:  107184604.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:2, by:24, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '24', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 2 24 2 65568 0
+substrg:  ['Instructions Executed', '116824146', '116824146', '116824146']
+inst_executed:  116824146.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:2049, gz:1, bx:8, by:2, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049', 'gz': '1', 'bx': '8', 'by': '2', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 2049 1 8 2 2 65568 0
+substrg:  ['Instructions Executed', '110428936', '110428936', '110428936']
+inst_executed:  110428936.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:6, by:16, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '6', 'by': '16', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 6 16 1 65568 0
+substrg:  ['Instructions Executed', '117451257', '117451257', '117451257']
+inst_executed:  117451257.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:1, by:4, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 1 4 8 65568 0
+substrg:  ['Instructions Executed', ' 95197433', ' 95197433', ' 95197433']
+inst_executed:  95197433.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:1, by:4, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 1 4 8 65568 0
+substrg:  ['Instructions Executed', '104275003', '104275003', '104275003']
+inst_executed:  104275003.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:8, by:12, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '8', 'by': '12', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 8 12 1 65568 0
+substrg:  ['Instructions Executed', '120461692', '120461692', '120461692']
+inst_executed:  120461692.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:24, by:1, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '24', 'by': '1', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 24 1 4 65568 0
+substrg:  ['Instructions Executed', '114062100', '114062100', '114062100']
+inst_executed:  114062100.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:1, by:16, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '1', 'by': '16', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 1 16 2 65568 0
+substrg:  ['Instructions Executed', '102282927', '102282927', '102282927']
+inst_executed:  102282927.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:16, by:1, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1'[   320s]    INFO opentuner.search.plugin.DisplayPlugin: tests=85, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   320s] WARNING opentuner.search.driver: duplicate configuration request #96 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   331s]    INFO opentuner.search.plugin.DisplayPlugin: tests=88, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   345s]    INFO opentuner.search.plugin.DisplayPlugin: tests=92, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+, 'bx': '16', 'by': '1', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 16 1 2 65568 0
+substrg:  ['Instructions Executed', '108377588', '108377588', '108377588']
+inst_executed:  108377588.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:4, by:6, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '6', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 4 6 4 65568 0
+substrg:  ['Instructions Executed', '113996047', '113996047', '113996047']
+inst_executed:  113996047.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:8, by:4, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '8', 'by': '4', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 8 4 1 65568 0
+substrg:  ['Instructions Executed', ' 98383412', ' 98383412', ' 98383412']
+inst_executed:  98383412.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:2, by:4, bz:12, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '4', 'bz': '12'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 2 4 12 65568 0
+substrg:  ['Instructions Executed', '112322863', '112322863', '112322863']
+inst_executed:  112322863.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:2, by:4, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '2', 'by': '4', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 2 4 4 65568 0
+substrg:  ['Instructions Executed', '107118115', '107118115', '107118115']
+inst_executed:  107118115.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:3, gz:1, bx:8, by:4, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '3', 'gz': '1', 'bx': '8', 'by': '4', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 3 1 8 4 1 65568 0
+substrg:  ['Instructions Executed', ' 91130679', ' 91130679', ' 91130679']
+inst_executed:  91130679.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:2, by:1, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '1', 'bz': '16'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 2 1 16 65568 0
+substrg:  ['Instructions Executed', ' 97842150', ' 97842150', ' 97842150']
+inst_executed:  97842150.0
+Configuration:  {'kernel': 0, 'config': "'gx:683, gy:1, gz:1, bx:24, by:1, bz:4, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '24', 'by': '1', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 24 1 4 65568 0
+substrg:  ['Instructions Executed', '117780157', '117780157', '117780157']
+inst_executed:  117780157.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:4, by:8, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 4 8 1 65568 0
+substrg:  ['Instructions Executed', ' 92790913', ' 92790913', ' 92790913']
+inst_executed:  92790913.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:2, by:12, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '12', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metri[   360s]    INFO opentuner.search.plugin.DisplayPlugin: tests=96, best {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:32, by:3, bz:1, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-128798046.0000, found by NormalGreedyMutation
+[   360s] WARNING opentuner.search.driver: duplicate configuration request #109 DifferentialEvolutionAlt/RandomNelderMead OLD
+[   360s] WARNING opentuner.search.driver: duplicate configuration request #110 DifferentialEvolutionAlt/UniformGreedyMutation OLD
+[   367s] WARNING opentuner.search.driver: duplicate configuration request #114 UniformGreedyMutation/DifferentialEvolutionAlt OLD
+[   379s]    INFO opentuner.search.plugin.DisplayPlugin: tests=101, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   379s] WARNING opentuner.search.driver: duplicate configuration request #116 UniformGreedyMutation/RandomNelderMead OLD
+[   379s] WARNING opentuner.search.driver: duplicate configuration request #119 UniformGreedyMutation/UniformGreedyMutation OLD
+cs inst_executed ./sumvector-cuda 0 1 683 1 2 12 4 65568 0
+substrg:  ['Instructions Executed', '115557852', '115557852', '115557852']
+inst_executed:  115557852.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:1, by:32, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '1', 'by': '32', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 1 32 1 65568 0
+substrg:  ['Instructions Executed', '101131790', '101131790', '101131790']
+inst_executed:  101131790.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:96, by:1, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '96', 'by': '1', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 96 1 1 65568 0
+substrg:  ['Instructions Executed', '110804321', '110804321', '110804321']
+inst_executed:  110804321.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:4, by:12, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '4', 'by': '12', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 4 12 2 65568 0
+substrg:  ['Instructions Executed', '120003317', '120003317', '120003317']
+inst_executed:  120003317.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:4, by:8, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 4 8 1 65568 0
+substrg:  ['Instructions Executed', ' 84539641', ' 84539641', ' 84539641']
+inst_executed:  84539641.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:2, by:3, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '3', 'bz': '16'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 2 3 16 65568 0
+substrg:  ['Instructions Executed', '119884587', '119884587', '119884587']
+inst_executed:  119884587.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '48', 'by': '2', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 48 2 1 65568 0
+substrg:  ['Instructions Executed', '131422825', '131422825', '131422825']
+inst_executed:  131422825.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:8, by:1, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '8', 'by': '1', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 8 1 4 65568 0
+substrg:  ['Instructions Executed', '105150211', '105150211', '105150211']
+inst_executed:  105150211.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:4, by:4, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '4', 'by': '4', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 4 4 2 65568 0
+substrg:  ['Instructions Executed', ' 88401195', ' 88401195', ' 88401195']
+inst_executed:  88401195.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:2049, bx:2, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '2049', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 2049 2 2 8 65568 0
+substrg:  ['Instructions Executed', '105763683', '105763683', [   386s] WARNING opentuner.search.driver: duplicate configuration request #121 UniformGreedyMutation/UniformGreedyMutation OLD
+[   386s] WARNING opentuner.search.driver: duplicate configuration request #122 UniformGreedyMutation/NormalGreedyMutation OLD
+[   393s]    INFO opentuner.search.plugin.DisplayPlugin: tests=105, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   393s] WARNING opentuner.search.driver: duplicate configuration request #124 UniformGreedyMutation/DifferentialEvolutionAlt OLD
+[   393s] WARNING opentuner.search.driver: duplicate configuration request #126 UniformGreedyMutation/DifferentialEvolutionAlt OLD
+[   416s]    INFO opentuner.search.plugin.DisplayPlugin: tests=111, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   416s] WARNING opentuner.search.driver: duplicate configuration request #135 NormalGreedyMutation/UniformGreedyMutation OLD
+'105763683']
+inst_executed:  105763683.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:8, by:4, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '8', 'by': '4', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 8 4 3 65568 0
+substrg:  ['Instructions Executed', '110938350', '110938350', '110938350']
+inst_executed:  110938350.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:8, by:2, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '8', 'by': '2', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 8 2 2 65568 0
+substrg:  ['Instructions Executed', ' 96422712', ' 96422712', ' 96422712']
+inst_executed:  96422712.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:8, by:2, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '8', 'by': '2', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 8 2 2 65568 0
+substrg:  ['Instructions Executed', ' 92448978', ' 92448978', ' 92448978']
+inst_executed:  92448978.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:8, by:6, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '8', 'by': '6', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 8 6 2 65568 0
+substrg:  ['Instructions Executed', '110679818', '110679818', '110679818']
+inst_executed:  110679818.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:6, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '6', 'by': '2', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 6 2 8 65568 0
+substrg:  ['Instructions Executed', '117687380', '117687380', '117687380']
+inst_executed:  117687380.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:1, by:32, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '32', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 1 32 3 65568 0
+substrg:  ['Instructions Executed', '118366736', '118366736', '118366736']
+inst_executed:  118366736.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:3, gz:1, bx:16, by:1, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '3', 'gz': '1', 'bx': '16', 'by': '1', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 3 1 16 1 2 65568 0
+substrg:  ['Instructions Executed', '108034760', '108034760', '108034760']
+inst_executed:  108034760.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:1, by:6, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '6', 'bz': '16'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 1 6 16 65568 0
+substrg:  ['Instructions Executed', '115215324', '115215324', '115215324']
+inst_executed:  115215324.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:16, by:2, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 16 2 1 65568 0
+substrg:  ['Instructions Executed', ' 99802147', ' 99802147', ' 99802147']
+inst_executed:  99802147.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:4, by:4, bz:2[   427s]    INFO opentuner.search.plugin.DisplayPlugin: tests=114, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   443s]    INFO opentuner.search.plugin.DisplayPlugin: tests=118, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   443s] WARNING opentuner.search.driver: duplicate configuration request #140 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   443s] WARNING opentuner.search.driver: duplicate configuration request #142 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   451s] WARNING opentuner.search.driver: duplicate configuration request #147 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '4', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 4 4 2 65568 0
+substrg:  ['Instructions Executed', '113631729', '113631729', '113631729']
+inst_executed:  113631729.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:16, by:1, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '16', 'by': '1', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 16 1 2 65568 0
+substrg:  ['Instructions Executed', '106429429', '106429429', '106429429']
+inst_executed:  106429429.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:1, by:2, bz:48, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '2', 'bz': '48'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 1 2 48 65568 0
+substrg:  ['Instructions Executed', '119226865', '119226865', '119226865']
+inst_executed:  119226865.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:2, by:6, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '6', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 2 6 8 65568 0
+substrg:  ['Instructions Executed', '109849676', '109849676', '109849676']
+inst_executed:  109849676.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:32, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '1', 'by': '32', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 1 32 3 65568 0
+substrg:  ['Instructions Executed', '118492314', '118492314', '118492314']
+inst_executed:  118492314.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:1, by:2, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '1', 'by': '2', 'bz': '16'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 1 2 16 65568 0
+substrg:  ['Instructions Executed', '102268634', '102268634', '102268634']
+inst_executed:  102268634.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:8, bz:6, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '8', 'bz': '6'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 8 6 65568 0
+substrg:  ['Instructions Executed', '120966562', '120966562', '120966562']
+inst_executed:  120966562.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:6, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '6', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 6 8 65568 0
+substrg:  ['Instructions Executed', '122598500', '122598500', '122598500']
+inst_executed:  122598500.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:1, gz:683, bx:12, by:2, bz:4, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '12', 'by': '2', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 12 2 4 65568 0
+substrg:  ['Instructions Executed', '119662772', '119662772', '119662772']
+inst_executed:  119662772.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:24, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '24', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+[   462s]    INFO opentuner.search.plugin.DisplayPlugin: tests=123, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   477s]    INFO opentuner.search.plugin.DisplayPlugin: tests=127, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   477s] WARNING opentuner.search.driver: duplicate configuration request #152 UniformGreedyMutation/NormalGreedyMutation OLD
+[   477s] WARNING opentuner.search.driver: duplicate configuration request #155 UniformGreedyMutation/DifferentialEvolutionAlt OLD
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 24 2 65568 0
+substrg:  ['Instructions Executed', '112026887', '112026887', '112026887']
+inst_executed:  112026887.0
+Configuration:  {'kernel': 0, 'config': "'gx:683, gy:1, gz:1, bx:12, by:4, bz:2, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '12', 'by': '4', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 12 4 2 65568 0
+substrg:  ['Instructions Executed', '113711247', '113711247', '113711247']
+inst_executed:  113711247.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:2, by:16, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 2 16 1 65568 0
+substrg:  ['Instructions Executed', ' 94787297', ' 94787297', ' 94787297']
+inst_executed:  94787297.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:2, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 2 2 8 65568 0
+substrg:  ['Instructions Executed', '115882079', '115882079', '115882079']
+inst_executed:  115882079.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:3, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '3', 'bz': '16'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 3 16 65568 0
+substrg:  ['Instructions Executed', '125050500', '125050500', '125050500']
+inst_executed:  125050500.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:3, bx:2, by:4, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '3', 'bx': '2', 'by': '4', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 3 2 4 4 65568 0
+substrg:  ['Instructions Executed', '101856920', '101856920', '101856920']
+inst_executed:  101856920.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:3, gz:683, bx:1, by:32, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '3', 'gz': '683', 'bx': '1', 'by': '32', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 3 683 1 32 1 65568 0
+substrg:  ['Instructions Executed', '100388310', '100388310', '100388310']
+inst_executed:  100388310.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:1, by:1, bz:32, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '1', 'by': '1', 'bz': '32'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 1 1 32 65568 0
+substrg:  ['Instructions Executed', '102345122', '102345122', '102345122']
+inst_executed:  102345122.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:2, by:8, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '8', 'bz': '2'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 2 8 2 65568 0
+substrg:  ['Instructions Executed', '101373783', '101373783', '101373783']
+inst_executed:  101373783.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:2049, gz:1, bx:4, by:8, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049', 'gz': '1', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 2049 1 4 8 1 65568[   498s]    INFO opentuner.search.plugin.DisplayPlugin: tests=133, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   498s] WARNING opentuner.search.driver: duplicate configuration request #162 NormalGreedyMutation/RandomNelderMead OLD
+[   509s]    INFO opentuner.search.plugin.DisplayPlugin: tests=136, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   509s] WARNING opentuner.search.driver: duplicate configuration request #167 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   520s]    INFO opentuner.search.plugin.DisplayPlugin: tests=139, best {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:2, bz:1, ' \n", 'n': 65568}, cost time=-131422824.0000, found by UniformGreedyMutation
+[   520s] WARNING opentuner.search.driver: duplicate configuration request #168 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   520s] WARNING opentuner.search.driver: duplicate configuration request #169 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+ 0
+substrg:  ['Instructions Executed', ' 99367014', ' 99367014', ' 99367014']
+inst_executed:  99367014.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:32, by:1, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '32', 'by': '1', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 32 1 1 65568 0
+substrg:  ['Instructions Executed', ' 88046809', ' 88046809', ' 88046809']
+inst_executed:  88046809.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:2, by:3, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '3', 'bz': '16'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 2 3 16 65568 0
+substrg:  ['Instructions Executed', '112560038', '112560038', '112560038']
+inst_executed:  112560038.0
+Configuration:  {'kernel': 0, 'config': "'gx:3, gy:683, gz:1, bx:2, by:16, bz:1, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 2 16 1 65568 0
+substrg:  ['Instructions Executed', ' 99103303', ' 99103303', ' 99103303']
+inst_executed:  99103303.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:1, gz:683, bx:2, by:4, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '4', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 1 683 2 4 4 65568 0
+substrg:  ['Instructions Executed', '105610388', '105610388', '105610388']
+inst_executed:  105610388.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:2, by:8, bz:6, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '2', 'by': '8', 'bz': '6'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 2 8 6 65568 0
+substrg:  ['Instructions Executed', '122281669', '122281669', '122281669']
+inst_executed:  122281669.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:16, by:3, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '16', 'by': '3', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 16 3 2 65568 0
+substrg:  ['Instructions Executed', '112878254', '112878254', '112878254']
+inst_executed:  112878254.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:2, by:16, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 2 16 1 65568 0
+substrg:  ['Instructions Executed', ' 92572240', ' 92572240', ' 92572240']
+inst_executed:  92572240.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:16, by:2, bz:3, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '16', 'by': '2', 'bz': '3'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 16 2 3 65568 0
+substrg:  ['Instructions Executed', '120877812', '120877812', '120877812']
+inst_executed:  120877812.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:3, gy:683, gz:1, bx:8, by:4, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '3', 'gy': '683', 'gz': '1', 'bx': '8', 'by': '4', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 3 683 1 8 4 1 65568 0
+substrg:  ['Instructions Executed', ' 92757756', ' 92757756', ' 92757756']
+inst_executed:  92757756.0
+Configuration:  {'[   527s] WARNING opentuner.search.driver: duplicate configuration request #174 DifferentialEvolutionAlt/NormalGreedyMutation OLD
+[   539s]    INFO opentuner.search.plugin.DisplayPlugin: tests=144, best {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-132346222.0000, found by DifferentialEvolutionAlt
+[   539s] WARNING opentuner.search.driver: duplicate configuration request #178 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   539s] WARNING opentuner.search.driver: duplicate configuration request #179 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   547s] WARNING opentuner.search.driver: duplicate configuration request #182 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:3, by:8, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '3', 'by': '8', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 3 8 4 65568 0
+substrg:  ['Instructions Executed', '114315435', '114315435', '114315435']
+inst_executed:  114315435.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:3, bx:2, by:2, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '3', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 3 2 2 8 65568 0
+substrg:  ['Instructions Executed', ' 94819824', ' 94819824', ' 94819824']
+inst_executed:  94819824.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:16, by:3, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '16', 'by': '3', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 16 3 2 65568 0
+substrg:  ['Instructions Executed', '111276542', '111276542', '111276542']
+inst_executed:  111276542.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '1', 'by': '4', 'bz': '24'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 1 4 24 65568 0
+substrg:  ['Instructions Executed', '132346223', '132346223', '132346223']
+inst_executed:  132346223.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:683, gz:1, bx:16, by:1, bz:6, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '683', 'gz': '1', 'bx': '16', 'by': '1', 'bz': '6'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 683 1 16 1 6 65568 0
+substrg:  ['Instructions Executed', '116617927', '116617927', '116617927']
+inst_executed:  116617927.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:3, gz:1, bx:2, by:16, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '3', 'gz': '1', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 3 1 2 16 1 65568 0
+substrg:  ['Instructions Executed', '108735564', '108735564', '108735564']
+inst_executed:  108735564.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:3, gz:683, bx:4, by:2, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '3', 'gz': '683', 'bx': '4', 'by': '2', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 3 683 4 2 4 65568 0
+substrg:  ['Instructions Executed', '109664823', '109664823', '109664823']
+inst_executed:  109664823.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:12, by:1, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '12', 'by': '1', 'bz': '8'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 12 1 8 65568 0
+substrg:  ['Instructions Executed', '113282475', '113282475', '113282475']
+inst_executed:  113282475.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:48, by:1, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '48', 'by': '1', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 48 1 2 65568 0
+substrg:  ['Instructions Executed', '114732916', '114732916', '114732916']
+inst_executed:  114732916.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:2049, gz:1, bx:32, by:1, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049[   558s]    INFO opentuner.search.plugin.DisplayPlugin: tests=149, best {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-132346222.0000, found by DifferentialEvolutionAlt
+[   558s] WARNING opentuner.search.driver: duplicate configuration request #186 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   570s]    INFO opentuner.search.plugin.DisplayPlugin: tests=152, best {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-132346222.0000, found by DifferentialEvolutionAlt
+[   570s] WARNING opentuner.search.driver: duplicate configuration request #188 DifferentialEvolutionAlt/RandomNelderMead OLD
+[   570s] WARNING opentuner.search.driver: duplicate configuration request #189 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+[   570s] WARNING opentuner.search.driver: duplicate configuration request #191 DifferentialEvolutionAlt/NormalGreedyMutation OLD
+[   573s] WARNING opentuner.search.driver: duplicate configuration request #192 DifferentialEvolutionAlt/NormalGreedyMutation OLD
+[   573s] WARNING opentuner.search.driver: duplicate configuration request #193 DifferentialEvolutionAlt/RandomNelderMead OLD
+[   573s] WARNING opentuner.search.driver: duplicate configuration request #194 DifferentialEvolutionAlt/DifferentialEvolutionAlt OLD
+', 'gz': '1', 'bx': '32', 'by': '1', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 2049 1 32 1 1 65568 0
+substrg:  ['Instructions Executed', ' 81369311', ' 81369311', ' 81369311']
+inst_executed:  81369311.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:2, by:4, bz:12, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '4', 'bz': '12'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 2 4 12 65568 0
+substrg:  ['Instructions Executed', '125988923', '125988923', '125988923']
+inst_executed:  125988923.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:1, by:96, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '96', 'bz': '1'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 1 96 1 65568 0
+substrg:  ['Instructions Executed', '122270429', '122270429', '122270429']
+inst_executed:  122270429.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:4, by:1, bz:24, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '1', 'bz': '24'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 4 1 24 65568 0
+substrg:  ['Instructions Executed', '118474568', '118474568', '118474568']
+inst_executed:  118474568.0
+Configuration:  {'kernel': 0, 'config': "'gx:1, gy:1, gz:2049, bx:1, by:32, bz:1, ' \n", 'gpuId': 0, 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '2049', 'bx': '1', 'by': '32', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 2049 1 32 1 65568 0
+substrg:  ['Instructions Executed', ' 96991461', ' 96991461', ' 96991461']
+inst_executed:  96991461.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:12, by:2, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '12', 'by': '2', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 12 2 4 65568 0
+substrg:  ['Instructions Executed', '120552014', '120552014', '120552014']
+inst_executed:  120552014.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:4, by:8, bz:1, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 4 8 1 65568 0
+substrg:  ['Instructions Executed', ' 97462748', ' 97462748', ' 97462748']
+inst_executed:  97462748.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:3, gz:683, bx:2, by:4, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '3', 'gz': '683', 'bx': '2', 'by': '4', 'bz': '4'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 3 683 2 4 4 65568 0
+substrg:  ['Instructions Executed', ' 98382593', ' 98382593', ' 98382593']
+inst_executed:  98382593.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:683, bx:3, by:8, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '683', 'bx': '3', 'by': '8', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 1 683 3 8 4 65568 0
+substrg:  ['Instructions Executed', '123952269', '123952269', '123952269']
+inst_executed:  123952269.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:2049, gy:1, gz:1, bx:1, by:2, bz:16, ' \n", 'n': 65568}
+CFG:  {"'gx": '2049', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '2', 'bz': '16'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command[   592s]    INFO opentuner.search.plugin.DisplayPlugin: tests=158, best {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-132346222.0000, found by DifferentialEvolutionAlt
+[   592s] WARNING opentuner.search.driver: duplicate configuration request #200 DifferentialEvolutionAlt/RandomNelderMead OLD
+[   604s]    INFO opentuner.search.plugin.DisplayPlugin: tests=161, best {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-132346222.0000, found by DifferentialEvolutionAlt
+[   604s]    INFO opentuner.search.plugin.DisplayPlugin: tests=161, best {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}, cost time=-132346222.0000, found by DifferentialEvolutionAlt
+ line:  nvprof --metrics inst_executed ./sumvector-cuda 0 2049 1 1 1 2 16 65568 0
+substrg:  ['Instructions Executed', '110985477', '110985477', '110985477']
+inst_executed:  110985477.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:1, gy:2049, gz:1, bx:1, by:4, bz:8, ' \n", 'n': 65568}
+CFG:  {"'gx": '1', 'gy': '2049', 'gz': '1', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 2049
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 1 2049 1 1 4 8 65568 0
+substrg:  ['Instructions Executed', '112894021', '112894021', '112894021']
+inst_executed:  112894021.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:1, by:24, bz:4, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '24', 'bz': '4'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 1 24 4 65568 0
+substrg:  ['Instructions Executed', '119911935', '119911935', '119911935']
+inst_executed:  119911935.0
+Configuration:  {'kernel': 0, 'gpuId': 0, 'config': "'gx:683, gy:1, gz:1, bx:48, by:1, bz:2, ' \n", 'n': 65568}
+CFG:  {"'gx": '683', 'gy': '1', 'gz': '1', 'bx': '48', 'by': '1', 'bz': '2'}
+ConfBlock 96
+ConfGrid 683
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sumvector-cuda 0 683 1 1 48 1 2 65568 0
+substrg:  ['Instructions Executed', '128071361', '128071361', '128071361']
+inst_executed:  128071361.0
+Optimal block size written to sumvectorcuda_final_config.json: {'kernel': 0, 'config': "'gx:1, gy:683, gz:1, bx:1, by:4, bz:24, ' \n", 'gpuId': 0, 'n': 65568}
+Executing manipulator

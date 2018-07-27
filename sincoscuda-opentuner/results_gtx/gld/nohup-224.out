@@ -1,0 +1,2635 @@
+sincoscuda.py:108: SyntaxWarning: name 'compiled' is used prior to global declaration
+  global compiled
+[    12s]    INFO opentuner.search.plugin.DisplayPlugin: tests=4, best #40491, cost time=-24984412.0000, found by NormalGreedyMutation
+Executing manipulator
+Executing manipulator
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:196, gy:2, gz:4, bx:32, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '196', 'gy': '2', 'gz': '4', 'bx': '32', 'by': '1', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  false
+Compiling the program...
+ OK.
+
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 196 2 4 32 1 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:14, gz:2, bx:4, by:1, bz:32, ' \n"}
+CFG:  {"'gx": '14', 'gy': '14', 'gz': '2', 'bx': '4', 'by': '1', 'bz': '32'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 14 14 2 4 1 32 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:56, bx:448, by:1, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '56', 'bx': '448', 'by': '1', 'bz': '2'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 1 1 56 448 1 2 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:49, gz:8, bx:4, by:8, bz:1, ' \n"}
+CFG:  {"'gx": '4', 'gy': '49', 'gz': '8', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 49 8 4 8 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:8, bx:7, by:64, bz:2, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '8', 'bx': '7', 'by': '64', 'bz': '2'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 7 1 8 7 64 2 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:2, gz:7, bx:8, by:56, bz:2, ' \n"}
+CFG:  {"'gx": '4', 'gy': '2', 'gz': '7', 'bx': '8', 'by': '56', 'bz': '2'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 2 7 8 56 2 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:8, bx:28, by:8, bz:2, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '8', 'bx': '28', 'by': '8', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 7 2 8 28 8 2 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:16, gz:7, bx:16, by:1, bz:28, ' \n"}
+CFG:  {"'gx": '1', 'gy': '16', 'gz': '7', 'bx': '16', 'by': '1', 'bz': '28'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 1 16 7 16 1 28 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:56, bx:28, by:2, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '56', 'bx': '28', 'by': '2', 'bz': '16'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 56 28 2 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:112, bx:28, by:8, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '112',[    28s]    INFO opentuner.search.plugin.DisplayPlugin: tests=12, best #40696, cost time=-24987548.0000, found by NormalGreedyMutation
+ 'bx': '28', 'by': '8', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 2 112 28 8 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:7, gz:1, bx:2, by:14, bz:16, ' \n"}
+CFG:  {"'gx": '16', 'gy': '7', 'gz': '1', 'bx': '2', 'by': '14', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 16 7 1 2 14 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:112, bx:4, by:8, bz:2, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '112', 'bx': '4', 'by': '8', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 1 112 4 8 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:112, gy:14, gz:1, bx:2, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '112', 'gy': '14', 'gz': '1', 'bx': '2', 'by': '1', 'bz': '16'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 112 14 1 2 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:14, gz:1, bx:14, by:2, bz:16, ' \n"}
+CFG:  {"'gx": '8', 'gy': '14', 'gz': '1', 'bx': '14', 'by': '2', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 14 1 14 2 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:7, gz:4, bx:28, by:2, bz:4, ' \n"}
+CFG:  {"'gx": '8', 'gy': '7', 'gz': '4', 'bx': '28', 'by': '2', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 7 4 28 2 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:7, gz:2, bx:2, by:7, bz:64, ' \n"}
+CFG:  {"'gx": '4', 'gy': '7', 'gz': '2', 'bx': '2', 'by': '7', 'bz': '64'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 7 2 2 7 64 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:7, gz:1, bx:2, by:14, bz:16, ' \n"}
+CFG:  {"'gx": '16', 'gy': '7', 'gz': '1', 'bx': '2', 'by': '14', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 16 7 1 2 14 16 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:7, gz:1, bx:2, by:14, bz:16, ' \n"}
+CFG:  {"'gx": '16', 'gy': '7', 'gz': '1', 'bx': '2', 'by': '14', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 16 7 1 2 14 16 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:112, bx:2, by:14, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '112', 'bx': '2', 'by': '14', 'bz': '16'[    45s]    INFO opentuner.search.plugin.DisplayPlugin: tests=20, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 112 2 14 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:1, gz:4, bx:16, by:14, bz:1, ' \n"}
+CFG:  {"'gx": '56', 'gy': '1', 'gz': '4', 'bx': '16', 'by': '14', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 1 4 16 14 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:7, gz:7, bx:8, by:8, bz:4, ' \n"}
+CFG:  {"'gx": '4', 'gy': '7', 'gz': '7', 'bx': '8', 'by': '8', 'bz': '4'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 7 7 8 8 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:28, gz:2, bx:2, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '28', 'gy': '28', 'gz': '2', 'bx': '2', 'by': '1', 'bz': '16'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 28 2 2 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:4, gz:14, bx:2, by:16, bz:1, ' \n"}
+CFG:  {"'gx": '28', 'gy': '4', 'gz': '14', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 4 14 2 16 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:8, gz:49, bx:2, by:16, bz:1, ' \n"}
+CFG:  {"'gx": '4', 'gy': '8', 'gz': '49', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 8 49 2 16 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:4, gz:28, bx:8, by:28, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '4', 'gz': '28', 'bx': '8', 'by': '28', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 4 28 8 28 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:224, bx:8, by:28, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '224', 'bx': '8', 'by': '28', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 1 1 224 8 28 1 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:56, bx:2, by:16, bz:28, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '56', 'bx': '2', 'by': '16', 'bz': '28'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 1 56 2 16 28 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:7, gz:4, bx:16, by:14, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '7', 'gz': '4', 'bx': '16', 'by': '14', 'bz': '4'}
+ConfBlock 896
+ConfGrid 56
+compiled: [    61s]    INFO opentuner.search.plugin.DisplayPlugin: tests=28, best #40499, cost time=-24987548.0000, found by DifferentialEvolutionAlt
+[    70s] WARNING opentuner.search.driver: duplicate configuration request #34 UniformGreedyMutation/UniformGreedyMutation OLD
+[    70s] WARNING opentuner.search.driver: duplicate configuration request #35 UniformGreedyMutation/UniformGreedyMutation OLD
+[    74s]    INFO opentuner.search.plugin.DisplayPlugin: tests=34, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+ true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 2 7 4 16 14 4 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:28, bx:2, by:2, bz:32, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '28', 'bx': '2', 'by': '2', 'bz': '32'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 28 2 2 32 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:112, gz:2, bx:2, by:16, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '112', 'gz': '2', 'bx': '2', 'by': '16', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 112 2 2 16 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:4, gz:28, bx:7, by:16, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '4', 'gz': '28', 'bx': '7', 'by': '16', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 4 28 7 16 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:16, gz:1, bx:16, by:1, bz:28, ' \n"}
+CFG:  {"'gx": '7', 'gy': '16', 'gz': '1', 'bx': '16', 'by': '1', 'bz': '28'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 16 1 16 1 28 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:224, gy:7, gz:1, bx:32, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '224', 'gy': '7', 'gz': '1', 'bx': '32', 'by': '1', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 224 7 1 32 1 1 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:112, bx:2, by:7, bz:32, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '112', 'bx': '2', 'by': '7', 'bz': '32'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 112 2 7 32 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:14, gz:8, bx:1, by:28, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '14', 'gz': '8', 'bx': '1', 'by': '28', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 14 8 1 28 16 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:7, bx:1024, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '7', 'bx': '1024', 'by': '1', 'bz': '1'}
+ConfBlock 1024
+ConfGrid 49
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 7 1 7 1024 1 1 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:2, gz:14, bx:1, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '56', 'gy': '2', 'gz': '14', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 2 14 1 4 8 224 224 224 0
+substrg:  ['[    82s] WARNING opentuner.search.driver: duplicate configuration request #43 NormalGreedyMutation/UniformGreedyMutation OLD
+[    88s]    INFO opentuner.search.plugin.DisplayPlugin: tests=41, best #40718, cost time=-24987548.0000, found by NormalGreedyMutation
+/usr/lib/python2.7/dist-packages/sqlalchemy/orm/relationships.py:1404: SAWarning: Got None for value of column configuration.id; this is unsupported for a relationship comparison and will not currently produce an IS comparison (but may in a future release)
+  "(but may in a future release)" % column)
+[    96s] WARNING opentuner.search.driver: duplicate configuration request #49 NormalGreedyMutation/UniformGreedyMutation OLD
+Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:4, gz:7, bx:4, by:2, bz:4, ' \n"}
+CFG:  {"'gx": '56', 'gy': '4', 'gz': '7', 'bx': '4', 'by': '2', 'bz': '4'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 4 7 4 2 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:196, gz:8, bx:16, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '196', 'gz': '8', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 196 8 16 2 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:98, gy:8, gz:1, bx:16, by:2, bz:2, ' \n"}
+CFG:  {"'gx": '98', 'gy': '8', 'gz': '1', 'bx': '16', 'by': '2', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 98 8 1 16 2 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:2, gz:7, bx:112, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '4', 'gy': '2', 'gz': '7', 'bx': '112', 'by': '1', 'bz': '8'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 2 7 112 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:16, gz:7, bx:1, by:32, bz:14, ' \n"}
+CFG:  {"'gx": '1', 'gy': '16', 'gz': '7', 'bx': '1', 'by': '32', 'bz': '14'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 1 16 7 1 32 14 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:392, gy:4, gz:1, bx:4, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '392', 'gy': '4', 'gz': '1', 'bx': '4', 'by': '1', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 392 4 1 4 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:2, gz:1, bx:7, by:32, bz:4, ' \n"}
+CFG:  {"'gx": '28', 'gy': '2', 'gz': '1', 'bx': '7', 'by': '32', 'bz': '4'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 28 2 1 7 32 4 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:7, gz:4, bx:1, by:128, bz:7, ' \n"}
+CFG:  {"'gx": '2', 'gy': '7', 'gz': '4', 'bx': '1', 'by': '128', 'bz': '7'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 7 4 1 128 7 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:16, gz:49, bx:2, by:1, bz:32, ' \n"}
+CFG:  {"'gx": '1', 'gy': '16', 'gz': '49', 'bx': '2', 'by': '1', 'bz': '32'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 16 49 2 1 32 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224[   102s]    INFO opentuner.search.plugin.DisplayPlugin: tests=48, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   102s] WARNING opentuner.search.driver: duplicate configuration request #53 UniformGreedyMutation/UniformGreedyMutation OLD
+[   116s]    INFO opentuner.search.plugin.DisplayPlugin: tests=55, best #40507, cost time=-24987548.0000, found by DifferentialEvolutionAlt
+, 'gpuId': 0, 'config': "'gx:56, gy:2, gz:2, bx:2, by:112, bz:1, ' \n"}
+CFG:  {"'gx": '56', 'gy': '2', 'gz': '2', 'bx': '2', 'by': '112', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 2 2 2 112 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:28, bx:4, by:1, bz:64, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '28', 'bx': '4', 'by': '1', 'bz': '64'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 1 28 4 1 64 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:112, bx:16, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '112', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 1 112 16 2 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:14, gz:2, bx:16, by:2, bz:8, ' \n"}
+CFG:  {"'gx": '7', 'gy': '14', 'gz': '2', 'bx': '16', 'by': '2', 'bz': '8'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 14 2 16 2 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:14, gz:1, bx:16, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '14', 'gy': '14', 'gz': '1', 'bx': '16', 'by': '1', 'bz': '16'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 14 1 16 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:7, gz:1, bx:16, by:28, bz:1, ' \n"}
+CFG:  {"'gx": '16', 'gy': '7', 'gz': '1', 'bx': '16', 'by': '28', 'bz': '1'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 16 7 1 16 28 1 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:7, gz:2, bx:8, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '14', 'gy': '7', 'gz': '2', 'bx': '8', 'by': '4', 'bz': '8'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 7 2 8 4 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:392, gz:2, bx:8, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '392', 'gz': '2', 'bx': '8', 'by': '1', 'bz': '4'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 2 392 2 8 1 4 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:16, bx:1, by:112, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '16', 'bx': '1', 'by': '112', 'bz': '4'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 7 1 16 1 112 4 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, [   125s] WARNING opentuner.search.driver: duplicate configuration request #66 UniformGreedyMutation/UniformGreedyMutation OLD
+[   131s]    INFO opentuner.search.plugin.DisplayPlugin: tests=62, best #40732, cost time=-24987548.0000, found by UniformGreedyMutation
+gy:7, gz:2, bx:32, by:7, bz:2, ' \n"}
+CFG:  {"'gx": '8', 'gy': '7', 'gz': '2', 'bx': '32', 'by': '7', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 7 2 32 7 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:2, gz:56, bx:14, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '2', 'gz': '56', 'bx': '14', 'by': '1', 'bz': '16'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 2 56 14 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:1, gz:4, bx:2, by:224, bz:1, ' \n"}
+CFG:  {"'gx": '28', 'gy': '1', 'gz': '4', 'bx': '2', 'by': '224', 'bz': '1'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 1 4 2 224 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:14, bx:64, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '14', 'bx': '64', 'by': '1', 'bz': '4'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 1 14 64 1 4 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:8, gz:7, bx:1, by:56, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '8', 'gz': '7', 'bx': '1', 'by': '56', 'bz': '16'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 1 8 7 1 56 16 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:4, bx:16, by:14, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '4', 'bx': '16', 'by': '14', 'bz': '4'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 4 16 14 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:4, bx:1, by:8, bz:56, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '4', 'bx': '1', 'by': '8', 'bz': '56'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 14 4 1 8 56 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:7, gz:2, bx:28, by:32, bz:1, ' \n"}
+CFG:  {"'gx": '4', 'gy': '7', 'gz': '2', 'bx': '28', 'by': '32', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 7 2 28 32 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:112, gz:2, bx:4, by:4, bz:2, ' \n"}
+CFG:  {"'gx": '7', 'gy': '112', 'gz': '2', 'bx': '4', 'by': '4', 'bz': '2'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 112 2 4 4 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:4, bx:896, by:1, bz:1, ' \n"}
+CFG:  [   147s]    INFO opentuner.search.plugin.DisplayPlugin: tests=70, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   147s] WARNING opentuner.search.driver: duplicate configuration request #77 UniformGreedyMutation/UniformGreedyMutation OLD
+[   147s] WARNING opentuner.search.driver: duplicate configuration request #78 UniformGreedyMutation/UniformGreedyMutation OLD
+[   147s] WARNING opentuner.search.driver: duplicate configuration request #79 UniformGreedyMutation/UniformGreedyMutation OLD
+{"'gx": '7', 'gy': '2', 'gz': '4', 'bx': '896', 'by': '1', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 4 896 1 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:2, gz:2, bx:8, by:2, bz:56, ' \n"}
+CFG:  {"'gx": '14', 'gy': '2', 'gz': '2', 'bx': '8', 'by': '2', 'bz': '56'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 2 2 8 2 56 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:8, bx:32, by:7, bz:2, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '8', 'bx': '32', 'by': '7', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 7 2 8 32 7 2 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:8, gz:7, bx:112, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '8', 'gz': '7', 'bx': '112', 'by': '1', 'bz': '4'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 8 7 112 1 4 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:4, gz:14, bx:14, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '4', 'gy': '4', 'gz': '14', 'bx': '14', 'by': '1', 'bz': '16'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 4 14 14 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:16, bx:16, by:7, bz:2, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '16', 'bx': '16', 'by': '7', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 14 1 16 16 7 2 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:2, gz:7, bx:4, by:224, bz:1, ' \n"}
+CFG:  {"'gx": '4', 'gy': '2', 'gz': '7', 'bx': '4', 'by': '224', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 2 7 4 224 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:2, gz:8, bx:224, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '14', 'gy': '2', 'gz': '8', 'bx': '224', 'by': '1', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 14 2 8 224 1 1 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:16, gz:7, bx:14, by:2, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '16', 'gz': '7', 'bx': '14', 'by': '2', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 16 7 14 2 16 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:14, gz:14, bx:8, by:4, bz:1, ' \n"}
+CFG:  {"'gx": '8', 'gy': '14', 'gz': '14', 'bx': '8', 'by': '4', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command li[   158s]    INFO opentuner.search.plugin.DisplayPlugin: tests=75, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   166s] WARNING opentuner.search.driver: duplicate configuration request #89 UniformGreedyMutation/UniformGreedyMutation OLD
+[   166s] WARNING opentuner.search.driver: duplicate configuration request #90 UniformGreedyMutation/UniformGreedyMutation OLD
+[   166s] WARNING opentuner.search.driver: duplicate configuration request #91 UniformGreedyMutation/UniformGreedyMutation OLD
+[   168s]    INFO opentuner.search.plugin.DisplayPlugin: tests=80, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   168s] WARNING opentuner.search.driver: duplicate configuration request #93 NormalGreedyMutation/UniformGreedyMutation OLD
+ne:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 14 14 8 4 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:28, gz:1, bx:56, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '28', 'gz': '1', 'bx': '56', 'by': '1', 'bz': '16'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 28 1 56 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:2, gz:14, bx:2, by:224, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '2', 'gz': '14', 'bx': '2', 'by': '224', 'bz': '2'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 2 14 2 224 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:28, bx:8, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '28', 'bx': '8', 'by': '1', 'bz': '8'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 14 28 8 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:8, bx:2, by:448, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '8', 'bx': '2', 'by': '448', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 7 1 8 2 448 1 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:224, gy:1, gz:1, bx:56, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '224', 'gy': '1', 'gz': '1', 'bx': '56', 'by': '1', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 224 1 1 56 1 4 224 224 224 0
+substrg:  ['Instructions Executed', '  139552', '  139552', '  139552']
+inst_executed:  139552.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:224, gy:1, gz:1, bx:1, by:32, bz:7, ' \n"}
+CFG:  {"'gx": '224', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '32', 'bz': '7'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 224 1 1 1 32 7 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:7, gz:1, bx:2, by:128, bz:1, ' \n"}
+CFG:  {"'gx": '28', 'gy': '7', 'gz': '1', 'bx': '2', 'by': '128', 'bz': '1'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 7 1 2 128 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:7, gz:7, bx:16, by:16, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '7', 'gz': '7', 'bx': '16', 'by': '16', 'bz': '2'}
+ConfBlock 512
+ConfGrid 98
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 7 7 16 16 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:196, gz:2, bx:16, by:4, bz:1, ' \n"}
+CFG:  {"'gx": '2', 'gy': '196', 'gz': '2', 'bx': '16', 'by': '4', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed .[   182s]    INFO opentuner.search.plugin.DisplayPlugin: tests=87, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   182s] WARNING opentuner.search.driver: duplicate configuration request #102 UniformGreedyMutation/UniformGreedyMutation OLD
+/sincosc-cuda 1 2 196 2 16 4 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:1, gz:56, bx:112, by:1, bz:2, ' \n"}
+CFG:  {"'gx": '4', 'gy': '1', 'gz': '56', 'bx': '112', 'by': '1', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 1 56 112 1 2 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:2, gz:28, bx:4, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '28', 'gy': '2', 'gz': '28', 'bx': '4', 'by': '1', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 2 28 4 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:4, bx:8, by:56, bz:1, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '4', 'bx': '8', 'by': '56', 'bz': '1'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 14 4 8 56 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:392, gz:4, bx:32, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '392', 'gz': '4', 'bx': '32', 'by': '1', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 392 4 32 1 1 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:28, gz:2, bx:28, by:16, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '28', 'gz': '2', 'bx': '28', 'by': '16', 'bz': '2'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 28 2 28 16 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:4, gz:1, bx:4, by:28, bz:8, ' \n"}
+CFG:  {"'gx": '14', 'gy': '4', 'gz': '1', 'bx': '4', 'by': '28', 'bz': '8'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 4 1 4 28 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:196, gy:1, gz:2, bx:1, by:64, bz:2, ' \n"}
+CFG:  {"'gx": '196', 'gy': '1', 'gz': '2', 'bx': '1', 'by': '64', 'bz': '2'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 196 1 2 1 64 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:28, gz:1, bx:4, by:14, bz:4, ' \n"}
+CFG:  {"'gx": '8', 'gy': '28', 'gz': '1', 'bx': '4', 'by': '14', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 28 1 4 14 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:1, gz:28, bx:2, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '56', 'gy': '1', 'gz': '28', 'bx': '2', 'by': '4', 'bz': '4'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 1 28 2 4 4 224 2[   197s]    INFO opentuner.search.plugin.DisplayPlugin: tests=94, best #40753, cost time=-24987548.0000, found by RandomNelderMead
+24 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:14, gz:2, bx:56, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '4', 'gy': '14', 'gz': '2', 'bx': '56', 'by': '1', 'bz': '8'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 14 2 56 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:1, gz:14, bx:4, by:56, bz:2, ' \n"}
+CFG:  {"'gx": '8', 'gy': '1', 'gz': '14', 'bx': '4', 'by': '56', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 1 14 4 56 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:1, gz:14, bx:16, by:1, bz:14, ' \n"}
+CFG:  {"'gx": '16', 'gy': '1', 'gz': '14', 'bx': '16', 'by': '1', 'bz': '14'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 16 1 14 16 1 14 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:7, gz:112, bx:1, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '2', 'gy': '7', 'gz': '112', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 2 7 112 1 4 8 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:1, gz:7, bx:8, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '28', 'gy': '1', 'gz': '7', 'bx': '8', 'by': '4', 'bz': '8'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 1 7 8 4 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:8, bx:4, by:112, bz:1, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '8', 'bx': '4', 'by': '112', 'bz': '1'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 14 1 8 4 112 1 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:4, gz:7, bx:1, by:2, bz:16, ' \n"}
+CFG:  {"'gx": '56', 'gy': '4', 'gz': '7', 'bx': '1', 'by': '2', 'bz': '16'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 4 7 1 2 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:14, bx:4, by:4, bz:16, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '14', 'bx': '4', 'by': '4', 'bz': '16'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 14 4 4 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:2, gz:98, bx:1, by:1, bz:64, ' \n"}
+CFG:  {"'gx": '4', 'gy': '2', 'gz': '98', 'bx': '1', 'by': '1', 'bz': '64'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 2 98 1 1 64 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'n[   213s]    INFO opentuner.search.plugin.DisplayPlugin: tests=102, best #40759, cost time=-24987548.0000, found by RandomNelderMead
+[   213s] WARNING opentuner.search.driver: duplicate configuration request #119 UniformGreedyMutation/UniformGreedyMutation OLD
+[   228s]    INFO opentuner.search.plugin.DisplayPlugin: tests=109, best #29578, cost time=-24987548.0000, found by NormalGreedyMutation
+x': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:112, gy:1, gz:2, bx:28, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '112', 'gy': '1', 'gz': '2', 'bx': '28', 'by': '1', 'bz': '8'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 112 1 2 28 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:56, gz:2, bx:7, by:64, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '56', 'gz': '2', 'bx': '7', 'by': '64', 'bz': '1'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 56 2 7 64 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:56, gz:2, bx:56, by:2, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '56', 'gz': '2', 'bx': '56', 'by': '2', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 56 2 56 2 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:56, bx:28, by:2, bz:8, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '56', 'bx': '28', 'by': '2', 'bz': '8'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 2 56 28 2 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:16, gz:2, bx:7, by:8, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '16', 'gz': '2', 'bx': '7', 'by': '8', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 16 2 7 8 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:1, gz:28, bx:14, by:8, bz:8, ' \n"}
+CFG:  {"'gx": '2', 'gy': '1', 'gz': '28', 'bx': '14', 'by': '8', 'bz': '8'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 1 28 14 8 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:112, gy:1, gz:7, bx:1, by:32, bz:2, ' \n"}
+CFG:  {"'gx": '112', 'gy': '1', 'gz': '7', 'bx': '1', 'by': '32', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 112 1 7 1 32 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:224, bx:8, by:14, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '224', 'bx': '8', 'by': '14', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 224 8 14 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:196, gz:2, bx:2, by:32, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '196', 'gz': '2', 'bx': '2', 'by': '32', 'bz': '2'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 196 2 2 32 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648'][   245s]    INFO opentuner.search.plugin.DisplayPlugin: tests=117, best #35984, cost time=-24987548.0000, found by RandomNelderMead
+
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:112, bx:2, by:32, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '112', 'bx': '2', 'by': '32', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 7 1 112 2 32 1 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:4, gz:1, bx:28, by:16, bz:2, ' \n"}
+CFG:  {"'gx": '14', 'gy': '4', 'gz': '1', 'bx': '28', 'by': '16', 'bz': '2'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 14 4 1 28 16 2 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:1, gz:1, bx:2, by:32, bz:16, ' \n"}
+CFG:  {"'gx": '49', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '32', 'bz': '16'}
+ConfBlock 1024
+ConfGrid 49
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 49 1 1 2 32 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:16, bx:8, by:7, bz:4, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '16', 'bx': '8', 'by': '7', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 1 16 8 7 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:49, gz:2, bx:1, by:16, bz:8, ' \n"}
+CFG:  {"'gx": '4', 'gy': '49', 'gz': '2', 'bx': '1', 'by': '16', 'bz': '8'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 49 2 1 16 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1568, gy:1, gz:1, bx:2, by:2, bz:8, ' \n"}
+CFG:  {"'gx": '1568', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '2', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1568 1 1 2 2 8 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:7, gz:1, bx:1, by:64, bz:7, ' \n"}
+CFG:  {"'gx": '16', 'gy': '7', 'gz': '1', 'bx': '1', 'by': '64', 'bz': '7'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 16 7 1 1 64 7 224 224 224 0
+substrg:  ['Instructions Executed', '24982944', '24982944', '24982944']
+inst_executed:  24982944.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:98, gy:8, gz:1, bx:16, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '98', 'gy': '8', 'gz': '1', 'bx': '16', 'by': '1', 'bz': '4'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 98 8 1 16 1 4 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:4, gz:7, bx:28, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '8', 'gy': '4', 'gz': '7', 'bx': '28', 'by': '1', 'bz': '8'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 8 4 7 28 1 8 224 224 224 0
+substrg:  ['Inst[   261s]    INFO opentuner.search.plugin.DisplayPlugin: tests=125, best #40527, cost time=-24987548.0000, found by DifferentialEvolutionAlt
+[   261s] WARNING opentuner.search.driver: duplicate configuration request #142 UniformGreedyMutation/UniformGreedyMutation OLD
+[   261s] WARNING opentuner.search.driver: duplicate configuration request #143 UniformGreedyMutation/UniformGreedyMutation OLD
+ructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:98, gy:1, gz:2, bx:8, by:1, bz:32, ' \n"}
+CFG:  {"'gx": '98', 'gy': '1', 'gz': '2', 'bx': '8', 'by': '1', 'bz': '32'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 98 1 2 8 1 32 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:28, bx:4, by:4, bz:56, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '28', 'bx': '4', 'by': '4', 'bz': '56'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 2 28 4 4 56 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:7, gz:8, bx:16, by:2, bz:7, ' \n"}
+CFG:  {"'gx": '4', 'gy': '7', 'gz': '8', 'bx': '16', 'by': '2', 'bz': '7'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 7 8 16 2 7 224 224 224 0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:32, gz:7, bx:16, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '32', 'gz': '7', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 7 32 7 16 2 1 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:14, gz:1, bx:4, by:4, bz:14, ' \n"}
+CFG:  {"'gx": '16', 'gy': '14', 'gz': '1', 'bx': '4', 'by': '4', 'bz': '14'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 16 14 1 4 4 14 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:2, gz:7, bx:4, by:2, bz:32, ' \n"}
+CFG:  {"'gx": '14', 'gy': '2', 'gz': '7', 'bx': '4', 'by': '2', 'bz': '32'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 2 7 4 2 32 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:392, gz:2, bx:8, by:2, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '392', 'gz': '2', 'bx': '8', 'by': '2', 'bz': '2'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 392 2 8 2 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:2, gz:8, bx:4, by:1, bz:56, ' \n"}
+CFG:  {"'gx": '14', 'gy': '2', 'gz': '8', 'bx': '4', 'by': '1', 'bz': '56'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 14 2 8 4 1 56 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:8, gz:1, bx:1, by:32, bz:28, ' \n"}
+CFG:  {"'gx": '7', 'gy': '8', 'gz': '1', 'bx': '1', 'by': '32', 'bz': '28'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 8 1 1 32 28 224 224 224 0
+substrg:  ['Instructions Executed', '24982944', '24982944', '24982944']
+inst_executed:  24982944.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuI[   273s]    INFO opentuner.search.plugin.DisplayPlugin: tests=131, best #40779, cost time=-24987548.0000, found by NormalGreedyMutation
+d': 0, 'config': "'gx:4, gy:4, gz:14, bx:1, by:4, bz:56, ' \n"}
+CFG:  {"'gx": '4', 'gy': '4', 'gz': '14', 'bx': '1', 'by': '4', 'bz': '56'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 4 14 1 4 56 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:49, gz:1, bx:4, by:2, bz:32, ' \n"}
+CFG:  {"'gx": '4', 'gy': '49', 'gz': '1', 'bx': '4', 'by': '2', 'bz': '32'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 49 1 4 2 32 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:56, gz:14, bx:8, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '56', 'gz': '14', 'bx': '8', 'by': '1', 'bz': '4'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 56 14 8 1 4 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:7, gz:224, bx:1, by:2, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '7', 'gz': '224', 'bx': '1', 'by': '2', 'bz': '16'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 7 224 1 2 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:4, gz:28, bx:4, by:112, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '4', 'gz': '28', 'bx': '4', 'by': '112', 'bz': '1'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 4 28 4 112 1 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:28, gz:14, bx:8, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '2', 'gy': '28', 'gz': '14', 'bx': '8', 'by': '1', 'bz': '8'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 2 28 14 8 1 8 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:16, bx:1, by:56, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '16', 'bx': '1', 'by': '56', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 16 1 56 4 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:14, bx:2, by:32, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '14', 'bx': '2', 'by': '32', 'bz': '2'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 14 14 2 32 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:28, gz:7, bx:1, by:64, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '28', 'gz': '7', 'bx': '1', 'by': '64', 'bz': '2'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 28 7 1 64 2 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:8, gz:28, bx[   290s]    INFO opentuner.search.plugin.DisplayPlugin: tests=139, best #40783, cost time=-24987548.0000, found by RandomNelderMead
+[   290s] WARNING opentuner.search.driver: duplicate configuration request #156 UniformGreedyMutation/UniformGreedyMutation OLD
+[   290s] WARNING opentuner.search.driver: duplicate configuration request #157 UniformGreedyMutation/UniformGreedyMutation OLD
+[   290s] WARNING opentuner.search.driver: duplicate configuration request #158 UniformGreedyMutation/UniformGreedyMutation OLD
+:112, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '8', 'gz': '28', 'bx': '112', 'by': '2', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 8 28 112 2 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:16, bx:56, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '16', 'bx': '56', 'by': '1', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 16 56 1 4 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:112, gz:2, bx:1, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '7', 'gy': '112', 'gz': '2', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 112 2 1 4 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:7, gz:4, bx:28, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '8', 'gy': '7', 'gz': '4', 'bx': '28', 'by': '1', 'bz': '8'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 7 4 28 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:49, gz:2, bx:32, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '8', 'gy': '49', 'gz': '2', 'bx': '32', 'by': '2', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 49 2 32 2 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:4, gz:98, bx:64, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '4', 'gz': '98', 'bx': '64', 'by': '2', 'bz': '1'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 4 98 64 2 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:7, gz:1, bx:8, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '56', 'gy': '7', 'gz': '1', 'bx': '8', 'by': '1', 'bz': '16'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 56 7 1 8 1 16 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:16, gz:2, bx:16, by:1, bz:14, ' \n"}
+CFG:  {"'gx": '7', 'gy': '16', 'gz': '2', 'bx': '16', 'by': '1', 'bz': '14'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 7 16 2 16 1 14 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:784, gz:1, bx:16, by:1, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '784', 'gz': '1', 'bx': '16', 'by': '1', 'bz': '2'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 2 784 1 16 1 2 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:1, gz:784, bx:2, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '1', 'gz': '784', 'bx': '2', 'by': '4', 'bz': '4'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true[   308s]    INFO opentuner.search.plugin.DisplayPlugin: tests=148, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   316s] WARNING opentuner.search.driver: duplicate configuration request #174 UniformGreedyMutation/UniformGreedyMutation OLD
+[   323s]    INFO opentuner.search.plugin.DisplayPlugin: tests=155, best #40793, cost time=-24987548.0000, found by UniformGreedyMutation
+
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 1 784 2 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:49, gz:1, bx:8, by:16, bz:8, ' \n"}
+CFG:  {"'gx": '1', 'gy': '49', 'gz': '1', 'bx': '8', 'by': '16', 'bz': '8'}
+ConfBlock 1024
+ConfGrid 49
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 49 1 8 16 8 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:16, gz:2, bx:16, by:14, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '16', 'gz': '2', 'bx': '16', 'by': '14', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 16 2 16 14 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:4, gz:2, bx:16, by:14, bz:2, ' \n"}
+CFG:  {"'gx": '14', 'gy': '4', 'gz': '2', 'bx': '16', 'by': '14', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 14 4 2 16 14 2 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:98, gz:4, bx:4, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '98', 'gz': '4', 'bx': '4', 'by': '1', 'bz': '16'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 98 4 4 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:2, bx:128, by:1, bz:7, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '2', 'bx': '128', 'by': '1', 'bz': '7'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 14 2 128 1 7 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:1, gz:1, bx:128, by:7, bz:1, ' \n"}
+CFG:  {"'gx": '56', 'gy': '1', 'gz': '1', 'bx': '128', 'by': '7', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 1 1 128 7 1 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:8, gz:1, bx:2, by:8, bz:8, ' \n"}
+CFG:  {"'gx": '49', 'gy': '8', 'gz': '1', 'bx': '2', 'by': '8', 'bz': '8'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 49 8 1 2 8 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:7, gz:16, bx:2, by:16, bz:14, ' \n"}
+CFG:  {"'gx": '1', 'gy': '7', 'gz': '16', 'bx': '2', 'by': '16', 'bz': '14'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 7 16 2 16 14 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:8, bx:1, by:16, bz:14, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '8', 'bx': '1', 'by': '16', 'bz': '14'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvpro[   339s]    INFO opentuner.search.plugin.DisplayPlugin: tests=163, best #40802, cost time=-24987548.0000, found by NormalGreedyMutation
+f --metrics inst_executed ./sincosc-cuda 1 2 14 8 1 16 14 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:8, gz:2, bx:2, by:1, bz:32, ' \n"}
+CFG:  {"'gx": '49', 'gy': '8', 'gz': '2', 'bx': '2', 'by': '1', 'bz': '32'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 49 8 2 2 1 32 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:4, gz:2, bx:2, by:14, bz:16, ' \n"}
+CFG:  {"'gx": '14', 'gy': '4', 'gz': '2', 'bx': '2', 'by': '14', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 4 2 2 14 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:1, gz:49, bx:16, by:8, bz:1, ' \n"}
+CFG:  {"'gx": '8', 'gy': '1', 'gz': '49', 'bx': '16', 'by': '8', 'bz': '1'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 1 49 16 8 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:28, gz:4, bx:1, by:224, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '28', 'gz': '4', 'bx': '1', 'by': '224', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 28 4 1 224 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:49, bx:1, by:128, bz:8, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '49', 'bx': '1', 'by': '128', 'bz': '8'}
+ConfBlock 1024
+ConfGrid 49
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 49 1 128 8 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:4, gz:14, bx:4, by:4, bz:56, ' \n"}
+CFG:  {"'gx": '1', 'gy': '4', 'gz': '14', 'bx': '4', 'by': '4', 'bz': '56'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 4 14 4 4 56 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:4, gz:98, bx:1, by:8, bz:8, ' \n"}
+CFG:  {"'gx": '2', 'gy': '4', 'gz': '98', 'bx': '1', 'by': '8', 'bz': '8'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 4 98 1 8 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:28, bx:28, by:32, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '28', 'bx': '28', 'by': '32', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 2 28 28 32 1 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:14, gz:2, bx:28, by:8, bz:1, ' \n"}
+CFG:  {"'gx": '8', 'gy': '14', 'gz': '2', 'bx': '28', 'by': '8', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224[   348s] WARNING opentuner.search.driver: duplicate configuration request #190 UniformGreedyMutation/UniformGreedyMutation OLD
+[   354s]    INFO opentuner.search.plugin.DisplayPlugin: tests=170, best #40805, cost time=-24987548.0000, found by UniformGreedyMutation
+
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 14 2 28 8 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:28, gz:1, bx:56, by:2, bz:4, ' \n"}
+CFG:  {"'gx": '4', 'gy': '28', 'gz': '1', 'bx': '56', 'by': '2', 'bz': '4'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 28 1 56 2 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:784, gy:1, gz:1, bx:16, by:4, bz:1, ' \n"}
+CFG:  {"'gx": '784', 'gy': '1', 'gz': '1', 'bx': '16', 'by': '4', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 784 1 1 16 4 1 224 224 224 0
+substrg:  ['Instructions Executed', '  139552', '  139552', '  139552']
+inst_executed:  139552.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:49, gz:1, bx:256, by:2, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '49', 'gz': '1', 'bx': '256', 'by': '2', 'bz': '2'}
+ConfBlock 1024
+ConfGrid 49
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 49 1 256 2 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:1, gz:196, bx:8, by:2, bz:4, ' \n"}
+CFG:  {"'gx": '4', 'gy': '1', 'gz': '196', 'bx': '8', 'by': '2', 'bz': '4'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 1 196 8 2 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:56, bx:14, by:64, bz:1, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '56', 'bx': '14', 'by': '64', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 56 14 64 1 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1568, gy:1, gz:1, bx:2, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '1568', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '4', 'bz': '4'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1568 1 1 2 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:49, gz:8, bx:2, by:1, bz:32, ' \n"}
+CFG:  {"'gx": '2', 'gy': '49', 'gz': '8', 'bx': '2', 'by': '1', 'bz': '32'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 49 8 2 1 32 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:7, gz:16, bx:1, by:32, bz:14, ' \n"}
+CFG:  {"'gx": '1', 'gy': '7', 'gz': '16', 'bx': '1', 'by': '32', 'bz': '14'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 7 16 1 32 14 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:2, gz:1, bx:56, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '28', 'gy': '2', 'gz': '1[   370s]    INFO opentuner.search.plugin.DisplayPlugin: tests=178, best #40810, cost time=-24987548.0000, found by RandomNelderMead
+[   370s] WARNING opentuner.search.driver: duplicate configuration request #202 UniformGreedyMutation/UniformGreedyMutation OLD
+', 'bx': '56', 'by': '1', 'bz': '16'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 2 1 56 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:4, gz:14, bx:4, by:8, bz:28, ' \n"}
+CFG:  {"'gx": '1', 'gy': '4', 'gz': '14', 'bx': '4', 'by': '8', 'bz': '28'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 4 14 4 8 28 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:1, gz:56, bx:8, by:4, bz:7, ' \n"}
+CFG:  {"'gx": '4', 'gy': '1', 'gz': '56', 'bx': '8', 'by': '4', 'bz': '7'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 1 56 8 4 7 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:392, gy:2, gz:2, bx:4, by:2, bz:4, ' \n"}
+CFG:  {"'gx": '392', 'gy': '2', 'gz': '2', 'bx': '4', 'by': '2', 'bz': '4'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 392 2 2 4 2 4 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:224, gz:1, bx:14, by:2, bz:8, ' \n"}
+CFG:  {"'gx": '1', 'gy': '224', 'gz': '1', 'bx': '14', 'by': '2', 'bz': '8'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 224 1 14 2 8 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:2, gz:14, bx:224, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '4', 'gy': '2', 'gz': '14', 'bx': '224', 'by': '2', 'bz': '1'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 2 14 224 2 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:196, gy:1, gz:2, bx:8, by:16, bz:1, ' \n"}
+CFG:  {"'gx": '196', 'gy': '1', 'gz': '2', 'bx': '8', 'by': '16', 'bz': '1'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 196 1 2 8 16 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:14, gz:1, bx:112, by:2, bz:2, ' \n"}
+CFG:  {"'gx": '8', 'gy': '14', 'gz': '1', 'bx': '112', 'by': '2', 'bz': '2'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 14 1 112 2 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:32, bx:4, by:14, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '32', 'bx': '4', 'by': '14', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 1 32 4 14 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:8, gz:1, bx:2, by:16, bz:7, ' \n"}
+CFG:  {"'gx": '28', 'gy': '8', 'gz': '1', 'bx': '2', 'by': '16', 'bz': '7'}
+[   385s]    INFO opentuner.search.plugin.DisplayPlugin: tests=185, best #40814, cost time=-24987548.0000, found by RandomNelderMead
+[   385s] WARNING opentuner.search.driver: duplicate configuration request #210 NormalGreedyMutation/RandomNelderMead OLD
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 8 1 2 16 7 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:1, gz:98, bx:4, by:4, bz:2, ' \n"}
+CFG:  {"'gx": '16', 'gy': '1', 'gz': '98', 'bx': '4', 'by': '4', 'bz': '2'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 16 1 98 4 4 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:112, gy:7, gz:1, bx:1, by:64, bz:1, ' \n"}
+CFG:  {"'gx": '112', 'gy': '7', 'gz': '1', 'bx': '1', 'by': '64', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 112 7 1 1 64 1 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:2, gz:7, bx:1, by:4, bz:16, ' \n"}
+CFG:  {"'gx": '56', 'gy': '2', 'gz': '7', 'bx': '1', 'by': '4', 'bz': '16'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 2 7 1 4 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:32, gz:7, bx:28, by:2, bz:4, ' \n"}
+CFG:  {"'gx": '1', 'gy': '32', 'gz': '7', 'bx': '28', 'by': '2', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 32 7 28 2 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:392, bx:2, by:16, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '392', 'bx': '2', 'by': '16', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 2 392 2 16 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:2, gz:98, bx:16, by:2, bz:2, ' \n"}
+CFG:  {"'gx": '4', 'gy': '2', 'gz': '98', 'bx': '16', 'by': '2', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 2 98 16 2 2 224 224 224 0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:49, gz:1, bx:64, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '16', 'gy': '49', 'gz': '1', 'bx': '64', 'by': '1', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 16 49 1 64 1 1 224 224 224 0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:1, gz:14, bx:7, by:32, bz:4, ' \n"}
+CFG:  {"'gx": '4', 'gy': '1', 'gz': '14', 'bx': '7', 'by': '32', 'bz': '4'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 1 14 7 32 4 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:7, gz:1, bx:32, by:28, bz:1, ' \n"}
+CFG:  {"'gx": '8', 'gy': '7', 'gz': '1', 'bx': '32', 'by': '28', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 7 1 32 28 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  [   399s]    INFO opentuner.search.plugin.DisplayPlugin: tests=192, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   399s] WARNING opentuner.search.driver: duplicate configuration request #218 UniformGreedyMutation/UniformGreedyMutation OLD
+[   413s]    INFO opentuner.search.plugin.DisplayPlugin: tests=199, best #40825, cost time=-24987548.0000, found by NormalGreedyMutation
+24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:112, gz:1, bx:1, by:16, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '112', 'gz': '1', 'bx': '1', 'by': '16', 'bz': '4'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 112 1 1 16 4 224 224 224 0
+substrg:  ['Instructions Executed', '24982944', '24982944', '24982944']
+inst_executed:  24982944.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:49, bx:2, by:256, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '49', 'bx': '2', 'by': '256', 'bz': '2'}
+ConfBlock 1024
+ConfGrid 49
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 49 2 256 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:112, gz:2, bx:14, by:8, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '112', 'gz': '2', 'bx': '14', 'by': '8', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 1 112 2 14 8 2 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:14, gz:14, bx:1, by:1, bz:32, ' \n"}
+CFG:  {"'gx": '8', 'gy': '14', 'gz': '14', 'bx': '1', 'by': '1', 'bz': '32'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 14 14 1 1 32 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:1, gz:16, bx:8, by:4, bz:2, ' \n"}
+CFG:  {"'gx": '49', 'gy': '1', 'gz': '16', 'bx': '8', 'by': '4', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 49 1 16 8 4 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:4, gz:7, bx:4, by:8, bz:8, ' \n"}
+CFG:  {"'gx": '7', 'gy': '4', 'gz': '7', 'bx': '4', 'by': '8', 'bz': '8'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 4 7 4 8 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:196, gz:1, bx:4, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '2', 'gy': '196', 'gz': '1', 'bx': '4', 'by': '4', 'bz': '8'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 196 1 4 4 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:56, gy:2, gz:7, bx:4, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '56', 'gy': '2', 'gz': '7', 'bx': '4', 'by': '4', 'bz': '4'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 56 2 7 4 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:1, gz:14, bx:7, by:4, bz:16, ' \n"}
+CFG:  {"'gx": '8', 'gy': '1', 'gz': '14', 'bx': '7', 'by': '4', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 8 1 14 7 4 16 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:112, gz:1, bx:16, by:7, bz:2, ' \n"}
+C[   421s] WARNING opentuner.search.driver: duplicate configuration request #231 UniformGreedyMutation/UniformGreedyMutation OLD
+[   427s]    INFO opentuner.search.plugin.DisplayPlugin: tests=206, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+FG:  {"'gx": '2', 'gy': '112', 'gz': '1', 'bx': '16', 'by': '7', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 112 1 16 7 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:7, gz:28, bx:1, by:2, bz:16, ' \n"}
+CFG:  {"'gx": '8', 'gy': '7', 'gz': '28', 'bx': '1', 'by': '2', 'bz': '16'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 8 7 28 1 2 16 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:2, gz:392, bx:32, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '2', 'gy': '2', 'gz': '392', 'bx': '32', 'by': '1', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 2 392 32 1 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1568, gy:1, gz:1, bx:1, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '1568', 'gy': '1', 'gz': '1', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1568 1 1 1 4 8 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:56, bx:1, by:56, bz:8, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '56', 'bx': '1', 'by': '56', 'bz': '8'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 1 2 56 1 56 8 224 224 224 0
+substrg:  ['Instructions Executed', '  142688', '  142688', '  142688']
+inst_executed:  142688.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:7, gz:8, bx:8, by:14, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '7', 'gz': '8', 'bx': '8', 'by': '14', 'bz': '4'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 7 8 8 14 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:8, gz:7, bx:2, by:64, bz:7, ' \n"}
+CFG:  {"'gx": '1', 'gy': '8', 'gz': '7', 'bx': '2', 'by': '64', 'bz': '7'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 8 7 2 64 7 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:28, bx:4, by:16, bz:1, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '28', 'bx': '4', 'by': '16', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 14 28 4 16 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:2, gz:7, bx:7, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '16', 'gy': '2', 'gz': '7', 'bx': '7', 'by': '4', 'bz': '8'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 16 2 7 7 4 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config':[   444s]    INFO opentuner.search.plugin.DisplayPlugin: tests=214, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+ "'gx:4, gy:7, gz:14, bx:32, by:1, bz:4, ' \n"}
+CFG:  {"'gx": '4', 'gy': '7', 'gz': '14', 'bx': '32', 'by': '1', 'bz': '4'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 7 14 32 1 4 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:2, gz:49, bx:1, by:1, bz:64, ' \n"}
+CFG:  {"'gx": '8', 'gy': '2', 'gz': '49', 'bx': '1', 'by': '1', 'bz': '64'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 2 49 1 1 64 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:4, gz:7, bx:2, by:64, bz:1, ' \n"}
+CFG:  {"'gx": '14', 'gy': '4', 'gz': '7', 'bx': '2', 'by': '64', 'bz': '1'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 4 7 2 64 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:112, gz:1, bx:16, by:7, bz:4, ' \n"}
+CFG:  {"'gx": '1', 'gy': '112', 'gz': '1', 'bx': '16', 'by': '7', 'bz': '4'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 112 1 16 7 4 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:4, gz:2, bx:2, by:2, bz:32, ' \n"}
+CFG:  {"'gx": '49', 'gy': '4', 'gz': '2', 'bx': '2', 'by': '2', 'bz': '32'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 49 4 2 2 2 32 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:8, gz:14, bx:1, by:32, bz:7, ' \n"}
+CFG:  {"'gx": '2', 'gy': '8', 'gz': '14', 'bx': '1', 'by': '32', 'bz': '7'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 8 14 1 32 7 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:56, gz:2, bx:1, by:14, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '56', 'gz': '2', 'bx': '1', 'by': '14', 'bz': '16'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 2 56 2 1 14 16 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:4, gz:28, bx:1, by:7, bz:32, ' \n"}
+CFG:  {"'gx": '2', 'gy': '4', 'gz': '28', 'bx': '1', 'by': '7', 'bz': '32'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 4 28 1 7 32 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:14, gz:2, bx:2, by:64, bz:2, ' \n"}
+CFG:  {"'gx": '7', 'gy': '14', 'gz': '2', 'bx': '2', 'by': '64', 'bz': '2'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 14 2 2 64 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:392, bx:2, by:2, bz:32, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '392', 'bx': '2', 'by': '2', 'bz': '32'}
+ConfBlock 128
+[   460s]    INFO opentuner.search.plugin.DisplayPlugin: tests=222, best #40841, cost time=-24987548.0000, found by UniformGreedyMutation
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 392 2 2 32 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:4, bx:4, by:14, bz:16, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '4', 'bx': '4', 'by': '14', 'bz': '16'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 4 4 14 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:1, gz:49, bx:4, by:64, bz:1, ' \n"}
+CFG:  {"'gx": '4', 'gy': '1', 'gz': '49', 'bx': '4', 'by': '64', 'bz': '1'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 1 49 4 64 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:1, gz:56, bx:32, by:14, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '1', 'gz': '56', 'bx': '32', 'by': '14', 'bz': '2'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 1 56 32 14 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:4, bx:112, by:8, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '4', 'bx': '112', 'by': '8', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 4 112 8 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:7, gz:112, bx:8, by:4, bz:2, ' \n"}
+CFG:  {"'gx": '1', 'gy': '7', 'gz': '112', 'bx': '8', 'by': '4', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 7 112 8 4 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:56, bx:1, by:64, bz:1, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '56', 'bx': '1', 'by': '64', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 1 56 1 64 1 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:2, gz:14, bx:32, by:1, bz:7, ' \n"}
+CFG:  {"'gx": '8', 'gy': '2', 'gz': '14', 'bx': '32', 'by': '1', 'bz': '7'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 2 14 32 1 7 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:4, gz:14, bx:32, by:1, bz:2, ' \n"}
+CFG:  {"'gx": '14', 'gy': '4', 'gz': '14', 'bx': '32', 'by': '1', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 4 14 32 1 2 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:2, gz:56, bx:112, by:1, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '2', 'g[   477s]    INFO opentuner.search.plugin.DisplayPlugin: tests=230, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   477s] WARNING opentuner.search.driver: duplicate configuration request #258 UniformGreedyMutation/UniformGreedyMutation OLD
+[   492s]    INFO opentuner.search.plugin.DisplayPlugin: tests=237, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+z': '56', 'bx': '112', 'by': '1', 'bz': '2'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 2 56 112 1 2 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:8, bx:4, by:56, bz:1, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '8', 'bx': '4', 'by': '56', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 14 8 4 56 1 224 224 224 0
+substrg:  ['Instructions Executed', '  145824', '  145824', '  145824']
+inst_executed:  145824.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:2, gz:28, bx:4, by:7, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '2', 'gz': '28', 'bx': '4', 'by': '7', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 2 28 4 7 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:28, gz:2, bx:28, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '28', 'gz': '2', 'bx': '28', 'by': '4', 'bz': '4'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 28 2 28 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:49, gz:1, bx:1, by:256, bz:4, ' \n"}
+CFG:  {"'gx": '1', 'gy': '49', 'gz': '1', 'bx': '1', 'by': '256', 'bz': '4'}
+ConfBlock 1024
+ConfGrid 49
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 49 1 1 256 4 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:14, gz:2, bx:4, by:1, bz:56, ' \n"}
+CFG:  {"'gx": '8', 'gy': '14', 'gz': '2', 'bx': '4', 'by': '1', 'bz': '56'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 14 2 4 1 56 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:112, gy:1, gz:2, bx:224, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '112', 'gy': '1', 'gz': '2', 'bx': '224', 'by': '1', 'bz': '1'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 112 1 2 224 1 1 224 224 224 0
+substrg:  ['Instructions Executed', '24978240', '24978240', '24978240']
+inst_executed:  24978240.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:196, gz:2, bx:4, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '4', 'gy': '196', 'gz': '2', 'bx': '4', 'by': '1', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 196 2 4 1 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:392, gz:1, bx:2, by:8, bz:8, ' \n"}
+CFG:  {"'gx": '1', 'gy': '392', 'gz': '1', 'bx': '2', 'by': '8', 'bz': '8'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 392 1 2 8 8 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:98, gz:2[   500s] WARNING opentuner.search.driver: duplicate configuration request #269 UniformGreedyMutation/UniformGreedyMutation OLD
+[   506s]    INFO opentuner.search.plugin.DisplayPlugin: tests=244, best #40857, cost time=-24987548.0000, found by RandomNelderMead
+[   507s] WARNING opentuner.search.driver: duplicate configuration request #274 NormalGreedyMutation/UniformGreedyMutation OLD
+, bx:1, by:4, bz:16, ' \n"}
+CFG:  {"'gx": '4', 'gy': '98', 'gz': '2', 'bx': '1', 'by': '4', 'bz': '16'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 98 2 1 4 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:56, gz:1, bx:4, by:8, bz:1, ' \n"}
+CFG:  {"'gx": '28', 'gy': '56', 'gz': '1', 'bx': '4', 'by': '8', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 28 56 1 4 8 1 224 224 224 0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:4, gz:14, bx:1, by:4, bz:56, ' \n"}
+CFG:  {"'gx": '4', 'gy': '4', 'gz': '14', 'bx': '1', 'by': '4', 'bz': '56'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 4 14 1 4 56 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:32, gz:1, bx:1, by:16, bz:2, ' \n"}
+CFG:  {"'gx": '49', 'gy': '32', 'gz': '1', 'bx': '1', 'by': '16', 'bz': '2'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 49 32 1 1 16 2 224 224 224 0
+substrg:  ['Instructions Executed', '24982944', '24982944', '24982944']
+inst_executed:  24982944.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:98, gy:1, gz:16, bx:8, by:2, bz:2, ' \n"}
+CFG:  {"'gx": '98', 'gy': '1', 'gz': '16', 'bx': '8', 'by': '2', 'bz': '2'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 98 1 16 8 2 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:28, gz:2, bx:28, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '28', 'gz': '2', 'bx': '28', 'by': '1', 'bz': '16'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 28 2 28 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:2, gz:8, bx:1, by:32, bz:2, ' \n"}
+CFG:  {"'gx": '49', 'gy': '2', 'gz': '8', 'bx': '1', 'by': '32', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 49 2 8 1 32 2 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:49, gz:1, bx:64, by:4, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '49', 'gz': '1', 'bx': '64', 'by': '4', 'bz': '2'}
+ConfBlock 512
+ConfGrid 98
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 49 1 64 4 2 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:7, gz:16, bx:1, by:32, bz:1, ' \n"}
+CFG:  {"'gx": '14', 'gy': '7', 'gz': '16', 'bx': '1', 'by': '32', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 7 16 1 32 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:14, gz:7, bx:1, by:16, bz:8, ' \n"}
+CFG:  {"'gx": '4', 'gy': '14', 'gz': '7', 'bx': '1', 'by': '16', 'bz': '8'}
+ConfBlock 128
+ConfGrid 392
+compiled[   521s]    INFO opentuner.search.plugin.DisplayPlugin: tests=251, best #40863, cost time=-24987548.0000, found by RandomNelderMead
+[   521s] WARNING opentuner.search.driver: duplicate configuration request #281 UniformGreedyMutation/UniformGreedyMutation OLD
+[   521s] WARNING opentuner.search.driver: duplicate configuration request #282 UniformGreedyMutation/UniformGreedyMutation OLD
+[   521s] WARNING opentuner.search.driver: duplicate configuration request #283 UniformGreedyMutation/UniformGreedyMutation OLD
+:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 4 14 7 1 16 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:7, bx:8, by:4, bz:16, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '7', 'bx': '8', 'by': '4', 'bz': '16'}
+ConfBlock 512
+ConfGrid 98
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 1 7 8 4 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:4, bx:64, by:1, bz:7, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '4', 'bx': '64', 'by': '1', 'bz': '7'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 2 14 4 64 1 7 224 224 224 0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:784, gy:1, gz:1, bx:2, by:32, bz:1, ' \n"}
+CFG:  {"'gx": '784', 'gy': '1', 'gz': '1', 'bx': '2', 'by': '32', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 784 1 1 2 32 1 224 224 224 0
+substrg:  ['Instructions Executed', '  139552', '  139552', '  139552']
+inst_executed:  139552.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:98, gy:4, gz:1, bx:128, by:1, bz:1, ' \n"}
+CFG:  {"'gx": '98', 'gy': '4', 'gz': '1', 'bx': '128', 'by': '1', 'bz': '1'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 98 4 1 128 1 1 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:1, gz:28, bx:4, by:16, bz:14, ' \n"}
+CFG:  {"'gx": '2', 'gy': '1', 'gz': '28', 'bx': '4', 'by': '16', 'bz': '14'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 1 28 4 16 14 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:7, gz:8, bx:8, by:8, bz:1, ' \n"}
+CFG:  {"'gx": '14', 'gy': '7', 'gz': '8', 'bx': '8', 'by': '8', 'bz': '1'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 7 8 8 8 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:392, bx:1, by:4, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '392', 'bx': '1', 'by': '4', 'bz': '16'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 2 392 1 4 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:4, gz:1, bx:2, by:8, bz:56, ' \n"}
+CFG:  {"'gx": '14', 'gy': '4', 'gz': '1', 'bx': '2', 'by': '8', 'bz': '56'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 4 1 2 8 56 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:7, gz:4, bx:1, by:14, bz:64, ' \n"}
+CFG:  {"'gx": '2', 'gy': '7', 'gz': '4', 'bx': '1', 'by': '14', 'bz': '64'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 7 4 1 14 64 224 224 224 0
+substrg:  ['Instructions E[   531s]    INFO opentuner.search.plugin.DisplayPlugin: tests=256, best #40867, cost time=-24987548.0000, found by NormalGreedyMutation
+[   540s] WARNING opentuner.search.driver: duplicate configuration request #295 UniformGreedyMutation/UniformGreedyMutation OLD
+[   546s]    INFO opentuner.search.plugin.DisplayPlugin: tests=263, best #40871, cost time=-24987548.0000, found by UniformGreedyMutation
+xecuted', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:1, gz:8, bx:8, by:16, bz:7, ' \n"}
+CFG:  {"'gx": '7', 'gy': '1', 'gz': '8', 'bx': '8', 'by': '16', 'bz': '7'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 1 8 8 16 7 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:4, bx:2, by:8, bz:28, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '4', 'bx': '2', 'by': '8', 'bz': '28'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 14 4 2 8 28 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:4, gz:7, bx:8, by:4, bz:28, ' \n"}
+CFG:  {"'gx": '2', 'gy': '4', 'gz': '7', 'bx': '8', 'by': '4', 'bz': '28'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 4 7 8 4 28 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:7, gz:16, bx:1, by:16, bz:2, ' \n"}
+CFG:  {"'gx": '14', 'gy': '7', 'gz': '16', 'bx': '1', 'by': '16', 'bz': '2'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 14 7 16 1 16 2 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:196, gy:1, gz:1, bx:4, by:8, bz:8, ' \n"}
+CFG:  {"'gx": '196', 'gy': '1', 'gz': '1', 'bx': '4', 'by': '8', 'bz': '8'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 196 1 1 4 8 8 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:8, gz:4, bx:7, by:8, bz:4, ' \n"}
+CFG:  {"'gx": '7', 'gy': '8', 'gz': '4', 'bx': '7', 'by': '8', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 8 4 7 8 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:8, gz:1, bx:28, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '14', 'gy': '8', 'gz': '1', 'bx': '28', 'by': '4', 'bz': '4'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 8 1 28 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:28, gz:1, bx:2, by:2, bz:32, ' \n"}
+CFG:  {"'gx": '14', 'gy': '28', 'gz': '1', 'bx': '2', 'by': '2', 'bz': '32'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 28 1 2 2 32 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:7, gz:1, bx:16, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '28', 'gy': '7', 'gz': '1', 'bx': '16', 'by': '4', 'bz': '4'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 28 7 1 16 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_execute[   562s]    INFO opentuner.search.plugin.DisplayPlugin: tests=271, best #40697, cost time=-24987548.0000, found by UniformGreedyMutation
+[   562s] WARNING opentuner.search.driver: duplicate configuration request #306 UniformGreedyMutation/UniformGreedyMutation OLD
+[   568s] WARNING opentuner.search.driver: duplicate configuration request #309 NormalGreedyMutation/UniformGreedyMutation OLD
+d:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:4, bx:32, by:2, bz:7, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '4', 'bx': '32', 'by': '2', 'bz': '7'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 14 4 32 2 7 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:1, gz:49, bx:2, by:8, bz:8, ' \n"}
+CFG:  {"'gx": '8', 'gy': '1', 'gz': '49', 'bx': '2', 'by': '8', 'bz': '8'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 1 49 2 8 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:8, gy:7, gz:7, bx:8, by:16, bz:1, ' \n"}
+CFG:  {"'gx": '8', 'gy': '7', 'gz': '7', 'bx': '8', 'by': '16', 'bz': '1'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 8 7 7 8 16 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:7, bx:4, by:8, bz:16, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '7', 'bx': '4', 'by': '8', 'bz': '16'}
+ConfBlock 512
+ConfGrid 98
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 14 1 7 4 8 16 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:28, gy:8, gz:1, bx:2, by:8, bz:14, ' \n"}
+CFG:  {"'gx": '28', 'gy': '8', 'gz': '1', 'bx': '2', 'by': '8', 'bz': '14'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 28 8 1 2 8 14 224 224 224 0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:7, gz:32, bx:8, by:4, bz:1, ' \n"}
+CFG:  {"'gx": '7', 'gy': '7', 'gz': '32', 'bx': '8', 'by': '4', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 7 7 32 8 4 1 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:8, gz:14, bx:4, by:2, bz:28, ' \n"}
+CFG:  {"'gx": '2', 'gy': '8', 'gz': '14', 'bx': '4', 'by': '2', 'bz': '28'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 8 14 4 2 28 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:1, gz:392, bx:32, by:1, bz:2, ' \n"}
+CFG:  {"'gx": '2', 'gy': '1', 'gz': '392', 'bx': '32', 'by': '1', 'bz': '2'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 1 392 32 1 2 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:7, gz:8, bx:2, by:2, bz:56, ' \n"}
+CFG:  {"'gx": '4', 'gy': '7', 'gz': '8', 'bx': '2', 'by': '2', 'bz': '56'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 7 8 2 2 56 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:1, gz:7, bx:8, by:2, bz:32, ' \n"}
+CFG:  {"'gx": '14', 'gy': '1', 'gz': '7', 'bx': '8', 'by': '2', 'bz': '32'}
+ConfBlock 512
+ConfGrid 98
+compiled[   575s]    INFO opentuner.search.plugin.DisplayPlugin: tests=277, best #40881, cost time=-24987548.0000, found by RandomNelderMead
+:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 1 7 8 2 32 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:2, gz:196, bx:4, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '2', 'gz': '196', 'bx': '4', 'by': '4', 'bz': '4'}
+ConfBlock 64
+ConfGrid 784
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 2 196 4 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:7, gy:2, gz:8, bx:32, by:1, bz:14, ' \n"}
+CFG:  {"'gx": '7', 'gy': '2', 'gz': '8', 'bx': '32', 'by': '1', 'bz': '14'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 7 2 8 32 1 14 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:49, gy:2, gz:2, bx:1, by:4, bz:64, ' \n"}
+CFG:  {"'gx": '49', 'gy': '2', 'gz': '2', 'bx': '1', 'by': '4', 'bz': '64'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 49 2 2 1 4 64 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:4, gz:98, bx:1, by:8, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '4', 'gz': '98', 'bx': '1', 'by': '8', 'bz': '16'}
+ConfBlock 128
+ConfGrid 392
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 4 98 1 8 16 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:2, gz:14, bx:1, by:16, bz:28, ' \n"}
+CFG:  {"'gx": '4', 'gy': '2', 'gz': '14', 'bx': '1', 'by': '16', 'bz': '28'}
+ConfBlock 448
+ConfGrid 112
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 2 14 1 16 28 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:2, gz:49, bx:8, by:2, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '2', 'gz': '49', 'bx': '8', 'by': '2', 'bz': '16'}
+ConfBlock 256
+ConfGrid 196
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 2 49 8 2 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:14, gz:4, bx:7, by:8, bz:16, ' \n"}
+CFG:  {"'gx": '1', 'gy': '14', 'gz': '4', 'bx': '7', 'by': '8', 'bz': '16'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 14 4 7 8 16 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:1, gz:14, bx:2, by:8, bz:14, ' \n"}
+CFG:  {"'gx": '16', 'gy': '1', 'gz': '14', 'bx': '2', 'by': '8', 'bz': '14'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 16 1 14 2 8 14 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:1, gy:2, gz:112, bx:32, by:1, bz:7, ' \n"}
+CFG:  {"'gx": '1', 'gy': '2', 'gz': '112', 'bx': '32', 'by': '1', 'bz': '7'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line[   591s]    INFO opentuner.search.plugin.DisplayPlugin: tests=285, best #40885, cost time=-24987548.0000, found by RandomNelderMead
+[   591s] WARNING opentuner.search.driver: duplicate configuration request #320 UniformGreedyMutation/UniformGreedyMutation OLD
+[   606s]    INFO opentuner.search.plugin.DisplayPlugin: tests=292, best #40893, cost time=-24987548.0000, found by NormalGreedyMutation
+[   606s]    INFO opentuner.search.plugin.DisplayPlugin: tests=292, best #40893, cost time=-24987548.0000, found by NormalGreedyMutation
+:  nvprof --metrics inst_executed ./sincosc-cuda 1 1 2 112 32 1 7 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:224, gy:1, gz:7, bx:16, by:2, bz:1, ' \n"}
+CFG:  {"'gx": '224', 'gy': '1', 'gz': '7', 'bx': '16', 'by': '2', 'bz': '1'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 224 1 7 16 2 1 224 224 224 0
+substrg:  ['Instructions Executed', '24981376', '24981376', '24981376']
+inst_executed:  24981376.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:112, gz:1, bx:8, by:7, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '112', 'gz': '1', 'bx': '8', 'by': '7', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 112 1 8 7 4 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 0, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:4, gz:28, bx:14, by:4, bz:4, ' \n"}
+CFG:  {"'gx": '2', 'gy': '4', 'gz': '28', 'bx': '14', 'by': '4', 'bz': '4'}
+ConfBlock 224
+ConfGrid 224
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 0 2 4 28 14 4 4 224 224 224 0
+substrg:  ['Instructions Executed', '  148960', '  148960', '  148960']
+inst_executed:  148960.0
+Configuration:  {'kernel': 2, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:4, gy:14, gz:28, bx:4, by:1, bz:8, ' \n"}
+CFG:  {"'gx": '4', 'gy': '14', 'gz': '28', 'bx': '4', 'by': '1', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 2 4 14 28 4 1 8 224 224 224 0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:14, gy:2, gz:2, bx:2, by:56, bz:8, ' \n"}
+CFG:  {"'gx": '14', 'gy': '2', 'gz': '2', 'bx': '2', 'by': '56', 'bz': '8'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 14 2 2 2 56 8 224 224 224 0
+substrg:  ['Instructions Executed', '24987648', '24987648', '24987648']
+inst_executed:  24987648.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:112, gz:7, bx:2, by:1, bz:16, ' \n"}
+CFG:  {"'gx": '2', 'gy': '112', 'gz': '7', 'bx': '2', 'by': '1', 'bz': '16'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 112 7 2 1 16 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:56, bx:1, by:4, bz:8, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '56', 'bx': '1', 'by': '4', 'bz': '8'}
+ConfBlock 32
+ConfGrid 1568
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 14 56 1 4 8 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Configuration:  {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:2, gy:14, gz:2, bx:64, by:14, bz:1, ' \n"}
+CFG:  {"'gx": '2', 'gy': '14', 'gz': '2', 'bx': '64', 'by': '14', 'bz': '1'}
+ConfBlock 896
+ConfGrid 56
+compiled:  true
+Antes do IF
+Running command line:  nvprof --metrics inst_executed ./sincosc-cuda 1 2 14 2 64 14 1 224 224 224 0
+substrg:  ['Instructions Executed', '24984512', '24984512', '24984512']
+inst_executed:  24984512.0
+Optimal block size written to sincoscuda_final_config.json: {'kernel': 1, 'nx': 224, 'ny': 224, 'nz': 224, 'gpuId': 0, 'config': "'gx:16, gy:7, gz:1, bx:2, by:14, bz:16, ' \n"}
+Executing manipulator

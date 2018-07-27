@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"kernel": 0, "nx": 96, "ny": 96, "nz": 96, "gpuId": 0, "config": "'gx:1, gy:1, gz:18, bx:1, by:512, bz:1, ' \n"}
+=======
+{"kernel": 1, "nx": 320, "ny": 320, "nz": 320, "gpuId": 0, "config": "'gx:1, gy:16, gz:10, bx:16, by:20, bz:2, ' \n"}
+>>>>>>> e7fc41fc17761eeb59bbf159f79e84c7e53711d7

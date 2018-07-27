@@ -1,0 +1,3 @@
+[  6683s]    INFO opentuner.search.plugin.DisplayPlugin: tests=2645, best #1384, cost time=0.5098, found by UniformGreedyMutation,UniformGreedyMutation
+Optimal block size written to sumvectorcuda_final_config.json: {'kernel': 0, 'gpuId': 0, 'funcId': 7, 'config': 'gx:1, gy:1, gz:1, bx:512, by:2, bz:1, ', 'n': 1024}
+
